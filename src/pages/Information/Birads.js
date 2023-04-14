@@ -1,12 +1,12 @@
 import React from 'react';
 import {View, Text,StyleSheet, StatusBar, Image, TouchableOpacity, ScrollView} from 'react-native';
 
-export default () => {
+export default ({navigation}) => {
     return(
         <View style={styles.container}>
             <StatusBar hidden={true} />
             <View style={styles.navigationBar}>
-                <TouchableOpacity >
+                <TouchableOpacity onPress={()=> navigation.goBack()}>
                     <Image style={styles.backImg} source={require('../../../assets/back-icon.png')}/>
                 </TouchableOpacity>
                 <Text style={styles.textNavigation}> BI-RADS</Text>
