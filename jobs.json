@@ -1,0 +1,58 @@
+[
+    {
+     "id": 1,
+     "name": "Assistente Social"
+ 
+ },
+ {
+     "id": 2,
+     "name": "Dentista"
+     
+ },
+ {
+     "id": 3,
+     "name": "Enfermeiro(a)"
+     
+ },
+ {
+     "id": 4,
+     "name": "Farmacêutico(a)"
+     
+ },
+ {
+     "id": 5,
+     "name": "Fonoaudiólogo(a)"
+     
+ },
+ {
+     "id": 6,
+     "name": "Médico(a)"
+     
+ },
+ {
+     "id": 7,
+     "name": "Nutricionista"
+     
+ },
+ {
+     "id": 8,
+     "name": "Profissional de Educação Física"
+     
+ },
+ {
+     "id": 9,
+     "name": "Psicólogo(a)"
+     
+ },
+ {
+     "id": 10,
+     "name": "Terapeuta Ocupacional"
+  
+ },
+ {
+    "id": 11,
+    "name": "Outro"
+ 
+}
+     
+]

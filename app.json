@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "MAMAPrev",
+    "slug": "mama-prev",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mamapp.mamaprev"
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
+    },
+    "description": "",
+    "android": {
+      "package": "com.mamapp.mamaprev"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "1c853f89-5dc1-45cf-9a02-b018b3972cf7"
+      }
+    }
+  }
+}
