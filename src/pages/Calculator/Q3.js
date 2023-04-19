@@ -107,7 +107,7 @@ export default ({navigation}) => {
                 >
                   <Image
                     style={styles.closeImg}
-                    source={require("../../../assets/close-icon.png")}
+                    source={require("../../assets/close-icon.png")}
                   />
                 </TouchableOpacity>
               </View>
@@ -138,7 +138,7 @@ export default ({navigation}) => {
             <TouchableOpacity onPress={() => navigation.goBack()}>
               <Image
                 style={styles.navigationImg}
-                source={require("../../../assets/back-icon.png")}
+                source={require("../../assets/back-icon.png")}
               />
             </TouchableOpacity>
             <Text style={styles.textNavigation}>
@@ -153,7 +153,7 @@ export default ({navigation}) => {
           >
             <Image
               style={styles.navigationImg}
-              source={require("../../../assets/info-icon.png")}
+              source={require("../../assets/info-icon.png")}
             />
           </TouchableOpacity>
         </View>

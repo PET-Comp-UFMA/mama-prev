@@ -14,7 +14,7 @@ export default ({navigation}) => {
             <StatusBar hidden={true} />
             <View style={styles.navigationBar}>
                 <TouchableOpacity onPress={() => navigation.goBack()}>
-                    <Image style={styles.backImg} source={require('../../../assets/back-icon.png')}/>
+                    <Image style={styles.backImg} source={require('../../assets/back-icon.png')}/>
                 </TouchableOpacity>
                 <Text style={styles.textNavigation}> O Câncer de Mama</Text>
             </View>
@@ -25,7 +25,7 @@ export default ({navigation}) => {
                     </Text>
                 </View>
                 <View style={styles.imgContainer}>
-                    <Image style={styles.img} source={require('../../../assets/doenca.png')}/>
+                    <Image style={styles.img} source={require('../../assets/doenca.png')}/>
                 </View>
                 <View style={styles.textContainer}>
                     <Text style={styles.text}>
@@ -42,7 +42,7 @@ export default ({navigation}) => {
                     </Text>
                 </View>
                 <View style={styles.imgContainer}>
-                    <Image style={styles.img} source={require('../../../assets/alteracaoDoTamanho.png')}/>
+                    <Image style={styles.img} source={require('../../assets/alteracaoDoTamanho.png')}/>
                 </View>
                 
                 <View style={styles.textContainer}>
@@ -73,7 +73,7 @@ export default ({navigation}) => {
                 </View>
 
                 <View style={styles.imgContainer}>
-                    <Image style={styles.img} source={require('../../../assets/abaulamentoDaMama.png')}/>
+                    <Image style={styles.img} source={require('../../assets/abaulamentoDaMama.png')}/>
                 </View>
                 <View style={styles.textContainer}>
                     <Text style={styles.text}>
@@ -102,7 +102,7 @@ export default ({navigation}) => {
                 </View>
 
                 <View style={styles.imgContainer}>
-                    <Image style={styles.img} source={require('../../../assets/descargaMamilar.png')}/>
+                    <Image style={styles.img} source={require('../../assets/descargaMamilar.png')}/>
                 </View>
                 <View style={styles.textContainer}>
                     <Text style={styles.text}>
@@ -131,7 +131,7 @@ export default ({navigation}) => {
                 </View>
 
                 <View style={styles.imgContainer}>
-                    <Image style={styles.img} source={require('../../../assets/vermelhidao.png')}/>
+                    <Image style={styles.img} source={require('../../assets/vermelhidao.png')}/>
                 </View>
                 <View style={styles.textContainer}>
                     <Text style={styles.text}> 
@@ -160,7 +160,7 @@ export default ({navigation}) => {
                 </View>
 
                 <View style={styles.imgContainer}>
-                    <Image style={styles.img} source={require('../../../assets/noduloAxila.png')}/>
+                    <Image style={styles.img} source={require('../../assets/noduloAxila.png')}/>
                 </View>
                 <View style={styles.textContainer}>
                     <Text style={styles.text}> 
@@ -189,7 +189,7 @@ export default ({navigation}) => {
                 </View>
 
                 <View style={styles.imgContainer}>
-                    <Image style={styles.img} source={require('../../../assets/nodulo.png')}/>
+                    <Image style={styles.img} source={require('../../assets/nodulo.png')}/>
                 </View>
                 <View style={styles.textContainer}>
                     <Text style={styles.text}> 
@@ -233,10 +233,10 @@ export default ({navigation}) => {
                     </Text>
                 </View>
                 <View style={styles.lastImgContainer}>
-                    <Image style={styles.lastImg} source={require('../../../assets/carcinomaDuctal.png')}/>
+                    <Image style={styles.lastImg} source={require('../../assets/carcinomaDuctal.png')}/>
                     <Text style={styles.refText}>Carcinoma ductal</Text>
                     <Text style={styles.refText}>Referência: Cancer Research UK/ Wikimedia Commons</Text>
-                    <Image style={styles.lastImg} source={require('../../../assets/carcinomaLobular.png')}/>
+                    <Image style={styles.lastImg} source={require('../../assets/carcinomaLobular.png')}/>
                     <Text style={styles.refText}>Carcinoma lobular</Text>
                     <Text style={styles.refText}>Referência: Cancer Research UK/ Wikimedia Commons</Text>
                 </View>

@@ -9,7 +9,7 @@ export default ({navigation}) => {
             <StatusBar hidden={true} />
             <View style={styles.navigationBar}>
                 <TouchableOpacity onPress={() => navigation.goBack()}>
-                    <Image style={styles.backImg} source={require('../../../assets/back-icon.png')}/>
+                    <Image style={styles.backImg} source={require('../../assets/back-icon.png')}/>
                 </TouchableOpacity>
                 <Text style={styles.textNavigation}> Prevenção Secundária</Text>
             </View>

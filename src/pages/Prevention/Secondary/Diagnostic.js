@@ -9,7 +9,7 @@ export default ({navigation}) => {
             <StatusBar hidden={true} />
             <View style={styles.navigationBar}>
                 <TouchableOpacity onPress={() => navigation.goBack()}>
-                    <Image style={styles.backImg} source={require('../../../../assets/back-icon.png')}/>
+                    <Image style={styles.backImg} source={require('../../../assets/back-icon.png')}/>
                 </TouchableOpacity>
                 <Text style={styles.textNavigation}> Diagnóstico Precoce</Text>
             </View>
@@ -26,7 +26,7 @@ export default ({navigation}) => {
                     </Text>
                 </View>
                 <View style={styles.imgContainer}>
-                    <Image style={styles.img1} source={require('../../../../assets/tripe2.png')}/>
+                    <Image style={styles.img1} source={require('../../../assets/tripe2.png')}/>
                 </View>
                 <View style={styles.textContainer}>
                     <View style={styles.textContainer}>
@@ -42,7 +42,7 @@ export default ({navigation}) => {
                     </Text>
                 </View>
                 <View style={styles.imgContainer}>
-                    <Image style={styles.img2} source={require('../../../../assets/prevencaao.png')}/>
+                    <Image style={styles.img2} source={require('../../../assets/prevencaao.png')}/>
                 </View>
                 <View style={styles.textContainer}>
                     <Text style={styles.text}>
@@ -61,7 +61,7 @@ export default ({navigation}) => {
                     </Text>
                 </View>
                 <View style={styles.imgContainer}>
-                    <Image style={styles.img3} source={require('../../../../assets/sinais_sintomas2.png')}/>
+                    <Image style={styles.img3} source={require('../../../assets/sinais_sintomas2.png')}/>
                 </View>
                 <View style={styles.textContainer}>
                     <Text style={styles.text}>
@@ -82,7 +82,7 @@ export default ({navigation}) => {
                         Além da possibilidade de diminuir o tempo até a confirmação diagnóstica, essa conduta concentraria a expertise assistencial, tanto em exame clínico quanto em métodos de imagem, citologia e biópsia mamária, o que poderia diminuir os casos falso-negativos no processo de investigação.
                     </Text>
                     <View style={styles.imgContainer}>
-                        <Image style={styles.img4} source={require('../../../../assets/centroRef.png')}/>
+                        <Image style={styles.img4} source={require('../../../assets/centroRef.png')}/>
                     </View>
                     <Text style={styles.lastText}>
                         O INCA recomenda que toda a avaliação diagnóstica do câncer de mama, após a identificação de sinais e sintomas suspeitos na atenção primária, seja feita em um mesmo centro de referência.

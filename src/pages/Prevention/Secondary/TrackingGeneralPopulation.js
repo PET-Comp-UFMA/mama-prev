@@ -27,7 +27,7 @@ export default ({navigation}) => {
                                 <Text style={{textAlign: 'center', marginVertical: 10, fontSize: 20, color: "#ffffff", marginLeft:20, fontWeight: "bold"}}>Título da Página</Text>
                             </View>
                             <TouchableOpacity style={styles.closeButton} onPress = {() => {setVisible(false)}}>
-                                <Image style={styles.closeImg} source={require('../../../../assets/close-icon.png')}/>
+                                <Image style={styles.closeImg} source={require('../../../assets/close-icon.png')}/>
                             </TouchableOpacity>
                         </View>
                         <Text style={{textAlign: 'center', marginVertical: 10, marginHorizontal:20, fontSize: 16}}>
@@ -45,12 +45,12 @@ export default ({navigation}) => {
             <View style={styles.navigationBar}>
                 <View style={{flexDirection: "row"}}>
                     <TouchableOpacity onPress={() => navigation.goBack()}>
-                        <Image style={styles.navigationImg} source={require('../../../../assets/back-icon.png')}/>
+                        <Image style={styles.navigationImg} source={require('../../../assets/back-icon.png')}/>
                     </TouchableOpacity>
                     <Text style={styles.textNavigation}> Rastreamento Geral ...</Text>
                 </View>
                 <TouchableOpacity onPress={() => {setVisible(true)}}>
-                    <Image style={styles.navigationImg} source={require('../../../../assets/info-icon.png')}/>
+                    <Image style={styles.navigationImg} source={require('../../../assets/info-icon.png')}/>
                 </TouchableOpacity>
             </View>
 
@@ -65,7 +65,7 @@ export default ({navigation}) => {
                         <Text style={styles.titleText}>Mamografia</Text>
                 </View>
                 <View style={styles.imgContainer}>
-                    <Image style={styles.img1} source={require('../../../../assets/mamografia2.png')}/>
+                    <Image style={styles.img1} source={require('../../../assets/mamografia2.png')}/>
                 </View>
                 <View style={styles.textContainer}>
                 {shouldShow1 ?
@@ -101,7 +101,7 @@ export default ({navigation}) => {
                     <Text style={styles.titleText}>Autoexame das mamas</Text>
                 </View>
                 <View style={styles.imgContainer}>
-                    <Image style={styles.img2} source={require('../../../../assets/autoexame.png')}/>
+                    <Image style={styles.img2} source={require('../../../assets/autoexame.png')}/>
                 </View>
                 <View style={styles.textContainer}>
                 {shouldShow2 ?
@@ -135,7 +135,7 @@ export default ({navigation}) => {
                     <Text style={styles.titleText}> Exame clínico das mamas</Text>
                 </View>
                 <View style={styles.imgContainer}>
-                    <Image style={styles.img3} source={require('../../../../assets/exameClinico.png')}/>
+                    <Image style={styles.img3} source={require('../../../assets/exameClinico.png')}/>
                 </View>
                 <View style={styles.textContainer}>
                 {shouldShow3 ?
@@ -168,7 +168,7 @@ export default ({navigation}) => {
                     <Text style={styles.titleText}>Ressonância nuclear magnética</Text>
                 </View>
                 <View style={styles.imgContainer}>
-                    <Image style={styles.img4} source={require('../../../../assets/ressonanciaMagnetica.png')}/>
+                    <Image style={styles.img4} source={require('../../../assets/ressonanciaMagnetica.png')}/>
                 </View>
                 <View style={styles.textContainer}>
                 {shouldShow4 ?
@@ -200,7 +200,7 @@ export default ({navigation}) => {
                     </Text>
                 </View>
                 <View style={styles.imgContainer}>
-                    <Image style={styles.img5} source={require('../../../../assets/ultrassom.png')}/>
+                    <Image style={styles.img5} source={require('../../../assets/ultrassom.png')}/>
                 </View>
                 <View style={styles.textContainer}>
                 {shouldShow5 ?
@@ -234,7 +234,7 @@ export default ({navigation}) => {
                         Termografia
                         </Text>
                         <View style={styles.imgContainer}>
-                            <Image style={styles.img6} source={require('../../../../assets/termografia.jpg')}/>
+                            <Image style={styles.img6} source={require('../../../assets/termografia.jpg')}/>
                         </View>
                         <View style={styles.refTextContainer}>
                             <Text style={styles.refText}>Referência: The Centre for Vibrant Health and wellness - Breast Thermal Imaging. Disponível em: https://www.drsalter.com/breast-thermal-imaging/ </Text>
@@ -250,7 +250,7 @@ export default ({navigation}) => {
                             Tomossíntese
                         </Text>
                         <View style={styles.imgContainer}>
-                            <Image style={styles.img7} source={require('../../../../assets/tomo.jpg')}/>
+                            <Image style={styles.img7} source={require('../../../assets/tomo.jpg')}/>
                         </View>
                         <View style={styles.refTextContainer}>
                             <Text style={styles.refText}>Referência: SMITH, A. Fundamentals of Breast Tomosynthesis: Improving the Performance of Mammography. Figura 5: Reconstructed Tomosynthesis Slices. 2008. Disponível em: http://www.hologic.ca/sites/default/files/Fundamentals%20of%20Breast%20Tomosynthesis_WP-00007.pdf </Text>

@@ -9,7 +9,7 @@ export default ({navigation}) => {
             <StatusBar hidden={true} />
             <View style={styles.navigationBar}>
                 <TouchableOpacity onPress={() => navigation.goBack()}>
-                    <Image style={styles.backImg} source={require('../../../assets/back-icon.png')}/>
+                    <Image style={styles.backImg} source={require('../../assets/back-icon.png')}/>
                 </TouchableOpacity>
                 <Text style={styles.textNavigation}> BI-RADS</Text>
             </View>
@@ -26,7 +26,7 @@ export default ({navigation}) => {
                     </Text>
                 </View>
                 <ScrollView horizontal={true}>
-                    <Image style={styles.img} source={require('../../../assets/tabela-birads2.png')}/>
+                    <Image style={styles.img} source={require('../../assets/tabela-birads2.png')}/>
                 </ScrollView>
             </ScrollView>
         </View>

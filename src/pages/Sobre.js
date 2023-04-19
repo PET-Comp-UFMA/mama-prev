@@ -8,7 +8,7 @@ export default ({navigation}) => {
             <StatusBar hidden={true} />
             <View style={styles.navigationBar}>
                 <TouchableOpacity onPress={() => navigation.goBack()}>
-                    <Image style={styles.backImg} source={require('../../assets/back-icon.png')}/>
+                    <Image style={styles.backImg} source={require('../assets/back-icon.png')}/>
                 </TouchableOpacity>
                 <Text style={styles.textNavigation}> Sobre o Aplicativo</Text>
             </View>
@@ -33,9 +33,9 @@ export default ({navigation}) => {
                         A pesquisa faz parte de um projeto financiado pela Fundação de Amparo à Pesquisa e ao Desenvolvimento Científico e Tecnológico do Maranhão (FAPEMA), intitulado “PREVENÇÃO SECUNDÁRIA DO CÂNCER DE MAMA: USO DE APLICATIVO MÓVEL PARA CAPACITAÇÃO DE ENFERMEIROS”.
                     </Text>
                     <View style={styles.imConteiner}>
-                        <Image style={styles.img} source={require('../../assets/ufma.png')}/>
-                        <Image style={styles.img} source={require('../../assets/posgrad.png')}/>
-                        <Image style={styles.img2} source={require('../../assets/fapema.png')}/>
+                        <Image style={styles.img} source={require('../assets/ufma.png')}/>
+                        <Image style={styles.img} source={require('../assets/posgrad.png')}/>
+                        <Image style={styles.img2} source={require('../assets/fapema.png')}/>
                     </View>
                     <Text style={styles.titleText}>
                         Referências

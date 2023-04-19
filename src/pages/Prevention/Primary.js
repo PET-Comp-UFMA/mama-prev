@@ -12,7 +12,7 @@ export default ({navigation}) => {
             <StatusBar hidden={true} />
             <View style={styles.navigationBar}>
                 <TouchableOpacity onPress={() => navigation.goBack()}>
-                    <Image style={styles.backImg} source={require('../../../assets/back-icon.png')}/>
+                    <Image style={styles.backImg} source={require('../../assets/back-icon.png')}/>
                 </TouchableOpacity>
                 <Text style={styles.textNavigation}> Prevenção Primária</Text>
             </View>
@@ -30,7 +30,7 @@ export default ({navigation}) => {
                         Fatores de risco modificáveis e comportamentos protetores
                     </Text>
                     <View style={styles.imgContainer}>
-                        <Image style={styles.img1} source={require('../../../assets/habitos.png')}/>
+                        <Image style={styles.img1} source={require('../../assets/habitos.png')}/>
                     </View>
                     <Text style={styles.text}>
                         - Controlar o peso (IMC menor que 30kg/m²) principalmente na pós-menopausa;
@@ -94,7 +94,7 @@ export default ({navigation}) => {
                         Mastectomia profilática com reconstrução mamária para mulheres com alto risco de desenvolver o câncer de mama
                     </Text>
                     <View style={styles.imgContainerSquare}>
-                        <Image style={styles.img2} source={require('../../../assets/mastectomia2.png')}/>
+                        <Image style={styles.img2} source={require('../../assets/mastectomia2.png')}/>
                     </View>
                     <Text style={styles.text}>
                         A redução absoluta do risco de câncer de mama varia de 2-7%, dependendo da idade de realização da cirurgia , geralmente até 40 anos.
@@ -108,7 +108,7 @@ export default ({navigation}) => {
                         Quimioprevenção para mulheres com alto risco de desenvolver o câncer de mama
                     </Text>
                     <View style={styles.imgContainerSquare}>
-                        <Image style={styles.img3} source={require('../../../assets/quimioprevencao2.png')}/>
+                        <Image style={styles.img3} source={require('../../assets/quimioprevencao2.png')}/>
                     </View>
                     <Text style={styles.text}>
                         De acordo com o Instituto Nacional do Câncer José Alencar Gomes da Silva (INCA), o SUS não utiliza medicamentos quimiopreventivos.
@@ -118,7 +118,7 @@ export default ({navigation}) => {
                     </Text>
                 </View>
                 <View style={styles.imgContainer}>
-                    <Image style={styles.img4} source={require('../../../assets/tabelaDoenca2.png')}/>
+                    <Image style={styles.img4} source={require('../../assets/tabelaDoenca2.png')}/>
                 </View>
                 
                 
