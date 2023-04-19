@@ -1,5 +1,5 @@
-import { createStackNavigator } from 'react-navigation-stack';
-import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from "@react-navigation/stack";
+import { NavigationContainer } from '@react-navigation/native';
 import Homepage from './src/pages/Homepage';
 import Sobre from './src/pages/Sobre';
 import Information from './src/pages/Information';
@@ -40,174 +40,58 @@ import Results from './src/pages/Calculator/Results';
 import ResultsChart from './src/pages/Calculator/ResultsChart';
 
 
+const Stack = createStackNavigator();
 
-const navigator = createStackNavigator(
-  
-  {
+function MyStack() {
+  return (
+    <NavigationContainer>
+    <Stack.Navigator
+      initialRouteName="FirstPage"
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
+      <Stack.Screen name="Homepage" component={Homepage} />
+      <Stack.Screen name="Sobre" component={Sobre} />
+      <Stack.Screen name="Information" component={Information} />
+      <Stack.Screen name="Doenca" component={Doenca} />
+      <Stack.Screen name="Risco" component={Risco} />
+      <Stack.Screen name="Prevencao" component={Prevencao} />
+      <Stack.Screen name="Birads" component={Birads} />
+      <Stack.Screen name="Primary" component={Primary} />
+      <Stack.Screen name="Secondary" component={Secondary} />
+      <Stack.Screen name="Diagnostic" component={Diagnostic} />
+      <Stack.Screen name="TrackingHighRisk" component={TrackingHighRisk} />
+      <Stack.Screen name="TrackingGeneralPopulation" component={TrackingGeneralPopulation} />
+      <Stack.Screen name="FirstPage" component={FirstPage} />
+      <Stack.Screen name="Avaliation" component={Avaliation} />
+      <Stack.Screen name="Calculator" component={Calculator} />
+      <Stack.Screen name="WillingnessTool" component={WillingnessTool} />
+      <Stack.Screen name="W1" component={W1} />
+      <Stack.Screen name="W2" component={W2} />
+      <Stack.Screen name="W3" component={W3} />
+      <Stack.Screen name="W4" component={W4} />
+      <Stack.Screen name="W5" component={W5} />
+      <Stack.Screen name="W6" component={W6} />
+      <Stack.Screen name="W7" component={W7} />
+      <Stack.Screen name="WillResult" component={WillResult} />
+      <Stack.Screen name="Q1" component={Q1} />
+      <Stack.Screen name="Q2" component={Q2} />
+      <Stack.Screen name="Q3" component={Q3} />
+      <Stack.Screen name="Q4" component={Q4} />
+      <Stack.Screen name="Q4sub1" component={Q4sub1} />
+      <Stack.Screen name="Q4sub2" component={Q4sub2} />
+      <Stack.Screen name="Q5" component={Q5} />
+      <Stack.Screen name="Q5sub1" component={Q5sub1} />
+      <Stack.Screen name="Q5sub2" component={Q5sub2} />
+      <Stack.Screen name="Q6" component={Q6} />
+      <Stack.Screen name="Q7" component={Q7} />
+      <Stack.Screen name="Q8" component={Q8} />
+      <Stack.Screen name="Results" component={Results} />
+      <Stack.Screen name="ResultsChart" component={ResultsChart} />
+    </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
 
-  Homepage: {
-    screen: Homepage,
-    navigationOptions: ({navigation}) => ({})
-  },
-  Sobre: {
-    screen: Sobre,
-    navigationOptions: ({navigation}) => ({})
-  },
-  Information: {
-    screen: Information,
-    navigationOptions: ({navigation}) => ({})
-  },
-  Doenca: {
-    screen: Doenca,
-    navigationOptions: ({navigation}) => ({})
-  },
-  Risco: {
-    screen: Risco,
-    navigationOptions: ({navigation}) => ({})
-  },
-  Prevencao: {
-    screen: Prevencao,
-    navigationOptions: ({navigation}) => ({})
-  },
-  Birads: {
-    screen: Birads,
-    navigationOptions: ({navigation}) => ({})
-  },
-  Primary: {
-    screen: Primary,
-    navigationOptions: ({navigation}) => ({})
-  },
-  Secondary: {
-    screen: Secondary,
-    navigationOptions: ({navigation}) => ({})
-  },
-  Diagnostic: {
-    screen: Diagnostic,
-    navigationOptions: ({navigation}) => ({})
-  },
-  TrackingHighRisk: {
-    screen: TrackingHighRisk,
-    navigationOptions: ({navigation}) => ({})
-  },
-  TrackingGeneralPopulation:{
-    screen: TrackingGeneralPopulation,
-    navigationOptions: ({navigation}) => ({})
-  },
-  FirstPage: {
-    screen: FirstPage,
-    navigationOptions: ({navigation}) => ({})
-  },
-  Avaliation:{
-    screen: Avaliation,
-    navigationOptions: ({navigation}) => ({})
-  },
-  Calculator:{
-    screen: Calculator,
-    navigationOptions: ({navigation}) => ({})
-  },
-  WillingnessTool:{
-    screen: WillingnessTool,
-    navigationOptions: ({navigation}) => ({})
-  },
-  W1: {
-    screen: W1,
-    navigationOptions: ({navigation}) => ({})
-  },
-  W2: {
-    screen: W2,
-    navigationOptions: ({navigation}) => ({})
-  },
-  W3: {
-    screen: W3,
-    navigationOptions: ({navigation}) => ({})
-  },
-  W4: {
-    screen: W4,
-    navigationOptions: ({navigation}) => ({})
-  },
-  W5: {
-    screen: W5,
-    navigationOptions: ({navigation}) => ({})
-  },
-  W6: {
-    screen: W6,
-    navigationOptions: ({navigation}) => ({})
-  },
-  W7: {
-    screen: W7,
-    navigationOptions: ({navigation}) => ({})
-  },
-  WillResult: {
-    screen: WillResult,
-    navigationOptions: ({navigation}) => ({})
-  },
-  Q1: {
-    screen: Q1,
-    navigationOptions: ({navigation}) => ({})
-  },
-  Q2: {
-    screen: Q2,
-    navigationOptions: ({navigation}) => ({})
-  },
-  Q3: {
-    screen: Q3,
-    navigationOptions: ({navigation}) => ({})
-  },
-  Q4: {
-    screen: Q4,
-    navigationOptions: ({navigation}) => ({})
-  },
-  Q4sub1: {
-    screen: Q4sub1,
-    navigationOptions: ({navigation}) => ({})
-  },
-  Q4sub2: {
-    screen: Q4sub2,
-    navigationOptions: ({navigation}) => ({})
-  },
-  Q5: {
-    screen: Q5,
-    navigationOptions: ({navigation}) => ({})
-  },
-  Q5sub1: {
-    screen: Q5sub1,
-    navigationOptions: ({navigation}) => ({})
-  },
-  Q5sub2: {
-    screen: Q5sub2,
-    navigationOptions: ({navigation}) => ({})
-  },
-  Q6: {
-    screen: Q6,
-    navigationOptions: ({navigation}) => ({})
-  },
-  Q7: {
-    screen: Q7,
-    navigationOptions: ({navigation}) => ({})
-  },
-  Q8: {
-    screen: Q8,
-    navigationOptions: ({navigation}) => ({})
-  },
-  Results: {
-    screen: Results,
-    navigationOptions: ({navigation}) => ({})
-  },
-  ResultsChart: {
-    screen: ResultsChart,
-    navigationOptions: ({navigation}) => ({})
-  }
-},
-{
-  initialRouteName: "FirstPage",
-  defaultNavigationOptions: {
-    title: '',
-    headerShown: false,
-    // headerStyle:{
-    //   backgroundColor: "#00b3fe"
-    // }
-  }
-});
-
-
-export default createAppContainer(navigator)
+export default MyStack;

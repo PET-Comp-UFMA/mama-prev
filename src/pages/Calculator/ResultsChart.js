@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import {View, Text, StyleSheet, StatusBar, TouchableOpacity, Modal, Image} from 'react-native';
-import { ScrollView } from 'react-native-gesture-handler';
+import {View, Text, StyleSheet, StatusBar, TouchableOpacity, Modal, Image, ScrollView, Dimensions} from 'react-native';
 import {PieChart} from 'react-native-chart-kit'
-import { Dimensions } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
-export default ({navigation}) => {
+export default () => {
     const[visible, setVisible] = useState(false);
+    const navigation = useNavigation();
+    
     const screenWidth = Dimensions.get("window").width;
 
     if(navigation.getParam('risk', 0) <= navigation.getParam('averageFiveRisk', 0)){

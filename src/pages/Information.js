@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import {View,Text, StyleSheet,StatusBar, TouchableOpacity, Modal, Image, TouchableOpacityBase} from 'react-native';
+import {View,Text, StyleSheet,StatusBar, TouchableOpacity, Modal, Image} from 'react-native';
 import NewButton from '../components/NewButton';
+import { useNavigation } from "@react-navigation/native";
 
-
-export default ({navigation}) => {
+export default () => {
+    const navigation = useNavigation();
     const[visible, setVisible] = useState(false);
     return(
         <View style={styles.container}>

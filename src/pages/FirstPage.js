@@ -7,20 +7,22 @@ import {
   TextInput,
   Dimensions,
   ScrollView,
-  Platform,
   TouchableOpacity,
   KeyboardAvoidingView
 } from "react-native";
 import SearchDropdown from "../components/SearchDropdown";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {ManageProfileController} from './ManagePrileController/index'
+import { useNavigation } from "@react-navigation/native";
 
 //TODO: Resolver envio de body com o botão pular
 
 let job = require("../../jobs.json");
 const jobArr = [...job];
 //AsyncStorage.clear()
-const FirstPage = ({ navigation }) => {
+const FirstPage = () => {
+  const navigation = useNavigation();
+  
   const [searching, setSearching] = useState(false);
   const [jobs] = useState(jobArr);
   const [filtered, setFiltered] = useState(jobs);
@@ -110,7 +112,7 @@ const FirstPage = ({ navigation }) => {
        )
        console.log('job:', job);
         
-    navigation.replace("Homepage")
+    navigation.navigate("Homepage")
     }
     const removeFew = async () => {
       const keys = ['@show', 'showfirstPage','@job']
@@ -144,7 +146,7 @@ const FirstPage = ({ navigation }) => {
       },[job])
   if (showFirstPage==="false"){
    
-    navigation.replace("Homepage")
+    navigation.navigate("Homepage")
   }
   return (
     

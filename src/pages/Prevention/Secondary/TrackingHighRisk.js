@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import {View, Text, StyleSheet, StatusBar, TouchableOpacity, Image, Modal} from 'react-native';
-import { ScrollView } from 'react-native-gesture-handler';
+import {View, Text, StyleSheet, StatusBar, TouchableOpacity, Image, Modal, ScrollView} from 'react-native';
+import { useNavigation } from "@react-navigation/native";
 
 
-export default ({navigation}) => {
-        const [visible, setVisible] = useState(false);
+export default () => {
+
+    const navigation = useNavigation();
+    const [visible, setVisible] = useState(false);
     return(
         <View style={styles.container}>
             <StatusBar hidden={true} />

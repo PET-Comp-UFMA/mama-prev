@@ -1,9 +1,10 @@
 import React from 'react';
 import {View, Text, StyleSheet, StatusBar, TouchableOpacity, Image} from 'react-native';
 import NewButton from '../../components/NewButton';
+import { useNavigation } from "@react-navigation/native";
 
-
-export default ({navigation}) => {
+export default () => {
+    const navigation = useNavigation();
     return(
     <View style={styles.container}>
         <StatusBar hidden={true} />

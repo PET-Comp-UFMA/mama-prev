@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, StatusBar, TouchableOpacity, Modal, Image } from "react-native";
 import { Picker } from '@react-native-picker/picker';
+import { useNavigation } from "@react-navigation/native";
 
-export default ({navigation}) => {
+export default () => {
     const[visible, setVisible] = useState(false);
     const [selectedAge, setSelectedAge] = useState()
+    const navigation = useNavigation();
 
     const ageOptions = [
         { label: '35 anos', value: '35' },

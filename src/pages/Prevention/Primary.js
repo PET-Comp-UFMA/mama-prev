@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import {View, Text, StyleSheet, Image, StatusBar, TouchableOpacity, Dimensions} from 'react-native';
-import { ScrollView } from 'react-native-gesture-handler';
+import {View, Text, StyleSheet, Image, StatusBar, TouchableOpacity, Dimensions, ScrollView} from 'react-native';
+import { useNavigation } from "@react-navigation/native";
 
-export default ({navigation}) => {
+export default () => {
+
+    const navigation = useNavigation();
 
     const [shouldShow1, setShouldShow1] = useState(false);
     const [shouldShow2, setShouldShow2] = useState(false);

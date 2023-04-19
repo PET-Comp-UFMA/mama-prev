@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState /*useEffect*/ } from 'react';
 import {View,Text, StyleSheet, StatusBar, Modal, TouchableOpacity, Image} from 'react-native';
 import NewButton from '../components/NewButton';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import ManageProfile from './ManageProfile'
-const Homepage = ({navigation}) => {
+//import AsyncStorage from '@react-native-async-storage/async-storage';
+//import ManageProfile from './ManageProfile'
+import { useNavigation } from "@react-navigation/native";
+
+const Homepage = () => {
     const[visible, setVisible] = useState(true);
 
-    
+    const navigation = useNavigation();
     return(
         <View style={{flex:1,flexDirection: "column",justifyContent: "center", backgroundColor:"#ffffff"}} transparent={true}> 
             <StatusBar hidden={true} />

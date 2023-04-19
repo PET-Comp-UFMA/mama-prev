@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import {View, Text, StyleSheet, StatusBar, TouchableOpacity, Modal, Image} from 'react-native';
-import { ScrollView } from 'react-native-gesture-handler';
+import {View, Text, StyleSheet, StatusBar, TouchableOpacity, Modal, Image, ScrollView} from 'react-native';
+import { useNavigation } from "@react-navigation/native";
 import axios from 'axios';
 
-export default ({navigation}) => {
+export default () => {
     var bodyFormData = new FormData();
     bodyFormData.append('cancerAndRadiationHistory', navigation.getParam('value1', ''))
     bodyFormData.append('geneticMakeup', navigation.getParam('value2', ''))
@@ -19,6 +19,8 @@ export default ({navigation}) => {
 
     const[visible, setVisible] = useState(false);
     const [data, setData] = useState([]);
+
+    const navigation = useNavigation();
 
     useEffect(() => {
         axios.post('https://bcrisktool.cancer.gov/calculate',
