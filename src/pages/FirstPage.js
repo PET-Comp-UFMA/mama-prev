@@ -135,17 +135,17 @@ const FirstPage = ({navigation}) => {
       }
     }
 
+    useEffect(()=>{
       getData()
       getStorageJob();
-      useEffect(()=>{
-        setStorageJob(value);
-        job ? sendData(url, job===''?"Não Selecionado":job): null
+      setStorageJob(value);
+      job ? sendData(url, job===''?"Não Selecionado":job): null
+
+    if (showFirstPage==="false"){
+      navigation.navigate("Homepage")
+    }
        
-      },[job])
-  if (showFirstPage==="false"){
-   
-    navigation.navigate("Homepage")
-  }
+    },[job])
   return (
     
     <ScrollView contentContainerStyle={styles.container}>
