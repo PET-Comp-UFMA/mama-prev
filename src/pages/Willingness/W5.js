@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import {View, Text, StyleSheet, StatusBar, TouchableOpacity, Modal, Image, ScrollView} from 'react-native';
-import { useNavigation } from "@react-navigation/native";
 
-export default () => {
+export default ({route, navigation}) => {
 
-    const navigation = useNavigation();
+    const { params } = route
     const[visible, setVisible] = useState(false);
+
     return(
     <View style={styles.container}>
         <StatusBar hidden={true} />
@@ -55,40 +55,40 @@ export default () => {
             </Text>
             <View style={styles.buttonsContainer}>
                 <TouchableOpacity style={styles.buttonsEach}onPress={() => navigation.navigate('W6', {
-                    sus: navigation.getParam('sus', 0),
-                    ben: (navigation.getParam('ben', 0) + 1) / 2
+                    sus: params.sus,
+                    ben: (params.ben + 1) / 2
                 })}>
                     <Text style={styles.buttonText}>
                         Discordo completamente
                     </Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('W6', {
-                    sus: navigation.getParam('sus', 0),
-                    ben: (navigation.getParam('ben', 0) + 2) / 2
+                    sus: params.sus,
+                    ben: (params.ben + 2) / 2
                 })}>
                     <Text style={styles.buttonText}>
                         Discordo em parte
                     </Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('W6', {
-                    sus: navigation.getParam('sus', 0),
-                    ben: (navigation.getParam('ben', 0) + 3) / 2
+                    sus: params.sus,
+                    ben: (params.ben + 3) / 2
                 })}>
                     <Text style={styles.buttonText}>
                         Não concordo e nem discordo
                     </Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('W6', {
-                sus: navigation.getParam('sus', 0),
-                ben: (navigation.getParam('ben', 0) + 4) / 2
+                    sus: params.sus,
+                    ben: (params.ben + 4) / 2
                 })}>
                     <Text style={styles.buttonText}>
                         Concordo em parte
                     </Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('W6', {
-                    sus: navigation.getParam('sus', 0),
-                    ben: (navigation.getParam('ben', 0) + 5) / 2
+                    sus: params.sus,
+                    ben: (params.ben + 5) / 2
                 })}>
                     <Text style={styles.buttonText}>
                         Concordo completamente

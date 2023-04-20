@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import {View, Text, StyleSheet, StatusBar, TouchableOpacity, Modal, Image} from 'react-native';
-import { useNavigation } from "@react-navigation/native";
 
-export default () => {
+export default ({route, navigation}) => {
     const[visible, setVisible] = useState(false);
-    const navigation = useNavigation();
+    const { params } = route
     
     return(
     <View style={styles.container}>
@@ -57,25 +56,25 @@ export default () => {
         </Text>
         <View style={styles.buttonsContainer}>
             <TouchableOpacity style={styles.buttonsEach}onPress={() => navigation.navigate('Q5sub2', {
-                value1: navigation.getParam('value1', ''),
-                value2: navigation.getParam('value2', ''),
-                value3: navigation.getParam('value3', ''),
-                value4: navigation.getParam('value4', ''),
-                value5: navigation.getParam('value5', ''),
-                value6: navigation.getParam('value6', ''),
-                value7: '1'
+               value1: params.value1,
+               value2: params.value2,
+               value3: params.value3,
+               value4: params.value4,
+               value5: params.value5,
+               value6: params.value6,
+               value7: '1'
             })}>
                 <Text style={styles.buttonText}>
                     Apenas uma
                 </Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q5sub2', {
-                value1: navigation.getParam('value1', ''),
-                value2: navigation.getParam('value2', ''),
-                value3: navigation.getParam('value3', ''),
-                value4: navigation.getParam('value4', ''),
-                value5: navigation.getParam('value5', ''),
-                value6: navigation.getParam('value6', ''),
+                value1: params.value1,
+                value2: params.value2,
+                value3: params.value3,
+                value4: params.value4,
+                value5: params.value5,
+                value6: params.value6,
                 value7: '2'
             })}>
                 <Text style={styles.buttonText}>

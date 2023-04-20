@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import {View, Text, StyleSheet, StatusBar, TouchableOpacity, Modal, Image, ScrollView} from 'react-native';
-import { useNavigation } from "@react-navigation/native";
 
-export default () => {
-
-    const navigation = useNavigation();
+export default ({route, navigation}) => {
+    const { params } = route
     const[visible, setVisible] = useState(false);
+    
     return(
     <View style={styles.container}>
         <StatusBar hidden={true} />
@@ -55,35 +54,35 @@ export default () => {
             </Text>
             <View style={styles.buttonsContainer}>
                 <TouchableOpacity style={styles.buttonsEach}onPress={() => navigation.navigate('W4', {
-                    sus: (navigation.getParam('sus', 0) + 1) / 3
+                    sus: (params.sus + 1) / 3
                 })}>
                     <Text style={styles.buttonText}>
                         Discordo completamente
                     </Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('W4', {
-                    sus: (navigation.getParam('sus', 0) + 2) / 3
+                    sus: (params.sus + 2) / 3
                 })}>
                     <Text style={styles.buttonText}>
                         Discordo em parte
                     </Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('W4', {
-                    sus: (navigation.getParam('sus', 0) + 3) / 3
+                    sus: (params.sus + 3) / 3
                 })}>
                     <Text style={styles.buttonText}>
                         Não concordo e nem discordo
                     </Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('W4', {
-                sus: (navigation.getParam('sus', 0) + 4) / 3
+                    sus: (params.sus + 4) / 3
                 })}>
                     <Text style={styles.buttonText}>
                         Concordo em parte
                     </Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('W4', {
-                    sus: (navigation.getParam('sus', 0) + 5) / 3
+                    sus: (params.sus + 5) / 3
                 })}>
                     <Text style={styles.buttonText}>
                         Concordo completamente

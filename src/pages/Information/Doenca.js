@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import {View, Text,StyleSheet, Image, StatusBar, TouchableOpacity, ScrollView} from 'react-native';
-import { useNavigation } from "@react-navigation/native";
 
-export default () => {
-    const navigation = useNavigation();
+export default ({navigation}) => {
     const [shouldShow1, setShouldShow1] = useState(false);
     const [shouldShow2, setShouldShow2] = useState(false);
     const [shouldShow3, setShouldShow3] = useState(false);

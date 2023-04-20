@@ -3,12 +3,10 @@ import {View,Text, StyleSheet, StatusBar, Modal, TouchableOpacity, Image} from '
 import NewButton from '../components/NewButton';
 //import AsyncStorage from '@react-native-async-storage/async-storage';
 //import ManageProfile from './ManageProfile'
-import { useNavigation } from "@react-navigation/native";
 
-const Homepage = () => {
+const Homepage = ({navigation}) => {
     const[visible, setVisible] = useState(true);
 
-    const navigation = useNavigation();
     return(
         <View style={{flex:1,flexDirection: "column",justifyContent: "center", backgroundColor:"#ffffff"}} transparent={true}> 
             <StatusBar hidden={true} />

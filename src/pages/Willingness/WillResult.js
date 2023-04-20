@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import {View, Text, StyleSheet, StatusBar, TouchableOpacity, Modal, Image, ScrollView} from 'react-native';
-import { useNavigation } from "@react-navigation/native";
 
-export default () => {
+export default ({route, navigation}) => {
 
-    const navigation = useNavigation();
+    const { params } = route
     const[visible, setVisible] = useState(false);
 
-    var res = (navigation.getParam('sus', 0) + navigation.getParam('ben', 0) + navigation.getParam('bar', 0)) / 3
+    var res = (params.sus + params.ben + params.bar) / 3
     if(res > 3.67){
         var result = true
     }

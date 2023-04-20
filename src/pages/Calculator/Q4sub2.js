@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import {View, Text, StyleSheet, StatusBar, TouchableOpacity, Modal, Image} from 'react-native';
-import { useNavigation } from "@react-navigation/native";
 
-export default () => {
+export default ({route, navigation}) => {
     const[visible, setVisible] = useState(false);
-    const navigation = useNavigation();
+    const { params } = route
     
     return(
     <View style={styles.container}>
@@ -54,10 +53,10 @@ export default () => {
         </Text>
         <View style={styles.buttonsContainer}>
             <TouchableOpacity style={styles.buttonsEach}onPress={() => navigation.navigate('Q5', {
-                value1: navigation.getParam('value1', ''),
-                value2: navigation.getParam('value2', ''),
-                value3: navigation.getParam('value3', ''),
-                value4: navigation.getParam('value4', ''),
+                value1: params.value1,
+                value2: params.value2,
+                value3: params.value3,
+                value4: params.value4,
                 value5: 'Chinese'
             })}>
                 <Text style={styles.buttonText}>
@@ -65,10 +64,10 @@ export default () => {
                 </Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q5', {
-                value1: navigation.getParam('value1', ''),
-                value2: navigation.getParam('value2', ''),
-                value3: navigation.getParam('value3', ''),
-                value4: navigation.getParam('value4', ''),
+                value1: params.value1,
+                value2: params.value2,
+                value3: params.value3,
+                value4: params.value4,
                 value5: 'Japanese'
             })}>
                 <Text style={styles.buttonText}>
@@ -76,10 +75,10 @@ export default () => {
                 </Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q5', {
-                value1: navigation.getParam('value1', ''),
-                value2: navigation.getParam('value2', ''),
-                value3: navigation.getParam('value3', ''),
-                value4: navigation.getParam('value4', ''),
+                value1: params.value1,
+                value2: params.value2,
+                value3: params.value3,
+                value4: params.value4,
                 value5: 'Filipino'
             })}>
                 <Text style={styles.buttonText}>
@@ -87,10 +86,10 @@ export default () => {
                 </Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q5', {
-                value1: navigation.getParam('value1', ''),
-                value2: navigation.getParam('value2', ''),
-                value3: navigation.getParam('value3', ''),
-                value4: navigation.getParam('value4', ''),
+                value1: params.value1,
+                value2: params.value2,
+                value3: params.value3,
+                value4: params.value4,
                 value5: 'Hawaiian'
             })}>
                 <Text style={styles.buttonText}>
@@ -98,21 +97,21 @@ export default () => {
                 </Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q5', {
-                value1: navigation.getParam('value1', ''),
-                value2: navigation.getParam('value2', ''),
-                value3: navigation.getParam('value3', ''),
-                value4: navigation.getParam('value4', ''),
-                value5: 'Islander'
+               value1: params.value1,
+               value2: params.value2,
+               value3: params.value3,
+               value4: params.value4,
+               value5: 'Islander'
             })}>
                 <Text style={styles.buttonText}>
                     Outra ilha do Pacífico
                 </Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q5', {
-                value1: navigation.getParam('value1', ''),
-                value2: navigation.getParam('value2', ''),
-                value3: navigation.getParam('value3', ''),
-                value4: navigation.getParam('value4', ''),
+                value1: params.value1,
+                value2: params.value2,
+                value3: params.value3,
+                value4: params.value4,
                 value5: 'Asian'
             })}>
                 <Text style={styles.buttonText}>

@@ -1,9 +1,8 @@
 import React from 'react';
 import {View, Text,StyleSheet, StatusBar, Image, TouchableOpacity, ScrollView} from 'react-native';
-import { useNavigation } from "@react-navigation/native";
 
-export default () => {
-    const navigation = useNavigation();
+export default ({navigation}) => {
+    
     return(
         <View style={styles.container}>
             <StatusBar hidden={true} />

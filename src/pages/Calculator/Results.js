@@ -1,26 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import {View, Text, StyleSheet, StatusBar, TouchableOpacity, Modal, Image, ScrollView} from 'react-native';
-import { useNavigation } from "@react-navigation/native";
 import axios from 'axios';
 
-export default () => {
+export default ({route, navigation}) => {
+    const { params } = route
     var bodyFormData = new FormData();
-    bodyFormData.append('cancerAndRadiationHistory', navigation.getParam('value1', ''))
-    bodyFormData.append('geneticMakeup', navigation.getParam('value2', ''))
-    bodyFormData.append('age', navigation.getParam('value3', ''))
-    bodyFormData.append('race', navigation.getParam('value4', ''))
-    bodyFormData.append('sub_race', navigation.getParam('value5', ''))
-    bodyFormData.append('biopsy', navigation.getParam('value6', ''))
-    bodyFormData.append('biopsy_result', navigation.getParam('value7', ''))
-    bodyFormData.append('biopsy_ah', navigation.getParam('value8', ''))
-    bodyFormData.append('age_period', navigation.getParam('value9', ''))
-    bodyFormData.append('childbirth_age', navigation.getParam('value10', ''))
-    bodyFormData.append('relatives', navigation.getParam('value11', ''))
+    bodyFormData.append('cancerAndRadiationHistory', params.value1)
+    bodyFormData.append('geneticMakeup', params.value2)
+    bodyFormData.append('age', params.value3)
+    bodyFormData.append('race', params.value4)
+    bodyFormData.append('sub_race', params.value5)
+    bodyFormData.append('biopsy', params.value6)
+    bodyFormData.append('biopsy_result', params.value7)
+    bodyFormData.append('biopsy_ah', params.value8)
+    bodyFormData.append('age_period', params.value9)
+    bodyFormData.append('childbirth_age', params.value10)
+    bodyFormData.append('relatives', params.value11)
 
     const[visible, setVisible] = useState(false);
     const [data, setData] = useState([]);
-
-    const navigation = useNavigation();
 
     useEffect(() => {
         axios.post('https://bcrisktool.cancer.gov/calculate',

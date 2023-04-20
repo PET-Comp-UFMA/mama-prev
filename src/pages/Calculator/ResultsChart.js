@@ -1,21 +1,20 @@
 import React, { useState } from "react";
 import {View, Text, StyleSheet, StatusBar, TouchableOpacity, Modal, Image, ScrollView, Dimensions} from 'react-native';
 import {PieChart} from 'react-native-chart-kit'
-import { useNavigation } from "@react-navigation/native";
 
-export default () => {
+export default ({route, navigation}) => {
     const[visible, setVisible] = useState(false);
-    const navigation = useNavigation();
+    const { params } = route
     
     const screenWidth = Dimensions.get("window").width;
 
-    if(navigation.getParam('risk', 0) <= navigation.getParam('averageFiveRisk', 0)){
+    if(params.risk <= params.averageFiveRisk){
         var color_risk = "#00ff00"
     }else{
         var color_risk = "#ff0000"
     }
 
-    if(navigation.getParam('lifetime_patient_risk', 0) <= navigation.getParam('lifetime_average_risk', 0)){
+    if(params.lifetime_patient_risk <= params.lifetime_average_risk){
         var color_lifetimerisk = "#00ff00"
     }else{
         var color_lifetimerisk = "#ff0000"
@@ -34,14 +33,14 @@ export default () => {
       const data_risk = [
         {
           name: "%",
-          percentage: navigation.getParam('risk', 0),
+          percentage: params.risk,
           color: color_risk,
           legendFontColor: "#7F7F7F",
           legendFontSize: 18
         },
         {
           name: "",
-          percentage: 100 - navigation.getParam('risk', 0),
+          percentage: 100 - params.risk,
           color: "#d3d3d3",
         },
       ];
@@ -49,14 +48,14 @@ export default () => {
       const data_averagerisk = [
         {
           name: "%",
-          percentage: navigation.getParam('averageFiveRisk', 0),
+          percentage: params.averageFiveRisk,
           color: "rgba(131, 167, 234, 1)",
           legendFontColor: "#7F7F7F",
           legendFontSize: 18
         },
         {
           name: "",
-          percentage: 100 - navigation.getParam('averageFiveRisk', 0),
+          percentage: 100 - params.averageFiveRisk,
           color: "#d3d3d3",
           legendFontColor: "#ffffff",
           legendFontSize: 18
@@ -66,14 +65,14 @@ export default () => {
       const data_lifetimerisk = [
         {
           name: "%",
-          percentage: navigation.getParam('lifetime_patient_risk', 0),
+          percentage: params.lifetime_patient_risk,
           color: color_lifetimerisk,
           legendFontColor: "#7F7F7F",
           legendFontSize: 18
         },
         {
           name: "",
-          percentage: 100 - navigation.getParam('lifetime_patient_risk', 0),
+          percentage: 100 - params.lifetime_patient_risk,
           color: "#d3d3d3",
           legendFontColor: "#ffffff",
           legendFontSize: 18
@@ -83,14 +82,14 @@ export default () => {
       const data_avglifetimerisk = [
         {
           name: "%",
-          percentage: navigation.getParam('lifetime_average_risk', 0),
+          percentage: params.lifetime_average_risk,
           color: "rgba(131, 167, 234, 1)",
           legendFontColor: "#7F7F7F",
           legendFontSize: 18
         },
         {
           name: "",
-          percentage: 100 - navigation.getParam('lifetime_average_risk', 0),
+          percentage: 100 - params.lifetime_average_risk,
           color: "#d3d3d3",
           legendFontColor: "#ffffff",
           legendFontSize: 18

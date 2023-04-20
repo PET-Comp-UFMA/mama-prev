@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, StatusBar, TouchableOpacity, Modal, Image } from "react-native";
 import { Picker } from '@react-native-picker/picker';
-import { useNavigation } from "@react-navigation/native";
 
-export default () => {
+export default ({route, navigation}) => {
     const[visible, setVisible] = useState(false);
-    const [selectedAge, setSelectedAge] = useState()
-    const navigation = useNavigation();
+    const [selectedAge, setSelectedAge] = useState('35')
+
+    const { params } = route
 
     const ageOptions = [
         { label: '35 anos', value: '35' },
@@ -179,15 +179,15 @@ export default () => {
               value={option.value}
             />
           ))}
-    </Picker>
+        </Picker>
 
         <View style={styles.buttonsContainer}>
           <TouchableOpacity
             style={styles.button}
             onPress={() =>
               navigation.navigate("Q4", {
-                value1: navigation.getParam("value1", ""),
-                value2: navigation.getParam("value1", ""),
+                value1: params.value1,
+                value2: params.value2,
                 value3: selectedAge,
               })
             }

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import {View, Text, StyleSheet, Alert, StatusBar, TouchableOpacity, Modal, Image} from 'react-native';
-import { useNavigation } from "@react-navigation/native";
 
-export default () => {
+export default ({route, navigation}) => {
     const[visible, setVisible] = useState(false);
-    const navigation = useNavigation();
+    const { params } = route
+
     return(
     <View style={styles.container}>
         <StatusBar hidden={true} />
@@ -66,7 +66,7 @@ export default () => {
                 </Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q3', {
-                value1: navigation.getParam('value1', 'default'),
+                value1: params.value1,
                 value2: '1'
             }
             )}>
@@ -77,7 +77,7 @@ export default () => {
         </View>
         <View style={styles.lastButtonContainer}>
             <TouchableOpacity style={styles.lastButton} onPress={() => navigation.navigate('Q3', {
-                    value1: navigation.getParam('value1', ''),
+                    value1:  params.value1,
                     value2: '2'
             })}>
                 <Text style={styles.buttonText}>

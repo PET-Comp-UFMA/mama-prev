@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import {View, Text, StyleSheet, StatusBar, TouchableOpacity, Modal, Image, ScrollView} from 'react-native';
-import { useNavigation } from "@react-navigation/native";
 
-export default () => {
-
-    const navigation = useNavigation();
+export default ({route, navigation}) => {
+    const { params } = route
     const[visible, setVisible] = useState(false);
+
     return(
     <View style={styles.container}>
         <StatusBar hidden={true} />
@@ -55,7 +54,7 @@ export default () => {
             </Text>
             <View style={styles.buttonsContainer}>
                 <TouchableOpacity style={styles.buttonsEach}onPress={() => navigation.navigate('W5', {
-                    sus: navigation.getParam('sus', 0),
+                    sus: params.sus,
                     ben: 1
                 })}>
                     <Text style={styles.buttonText}>
@@ -63,7 +62,7 @@ export default () => {
                     </Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('W5', {
-                    sus: navigation.getParam('sus', 0),
+                    sus: params.sus,
                     ben: 2
                 })}>
                     <Text style={styles.buttonText}>
@@ -71,7 +70,7 @@ export default () => {
                     </Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('W5', {
-                    sus: navigation.getParam('sus', 0),
+                    sus: params.sus,
                     ben: 3
                 })}>
                     <Text style={styles.buttonText}>
@@ -79,15 +78,15 @@ export default () => {
                     </Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('W5', {
-                sus: navigation.getParam('sus', 0),
-                ben: 4
+                    sus: params.sus,
+                    ben: 4
                 })}>
                     <Text style={styles.buttonText}>
                         Concordo em parte
                     </Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('W5', {
-                    sus: navigation.getParam('sus', 0),
+                    sus: params.sus,
                     ben: 5
                 })}>
                     <Text style={styles.buttonText}>

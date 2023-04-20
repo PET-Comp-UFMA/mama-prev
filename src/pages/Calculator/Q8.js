@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import {View, Text, StyleSheet, StatusBar, TouchableOpacity, Modal, Image, ScrollView} from 'react-native';
-import { useNavigation } from "@react-navigation/native";
 
-export default () => {
+export default ({route, navigation}) => {
     const[visible, setVisible] = useState(false);
-    const navigation = useNavigation();
+    const { params } = route
 
     return(
     <View style={styles.container}>
@@ -55,16 +54,16 @@ export default () => {
             </Text>
             <View style={styles.buttonsContainer}>
                 <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Results', {
-                    value1: navigation.getParam('value1', ''),
-                    value2: navigation.getParam('value2', ''),
-                    value3: navigation.getParam('value3', ''),
-                    value4: navigation.getParam('value4', ''),
-                    value5: navigation.getParam('value5', ''),
-                    value6: navigation.getParam('value6', ''),
-                    value7: navigation.getParam('value7', ''),
-                    value8: navigation.getParam('value8', ''),
-                    value9: navigation.getParam('value9', ''),
-                    value10: navigation.getParam('value10', ''),
+                    value1: params.value1,
+                    value2: params.value2,
+                    value3: params.value3,
+                    value4: params.value4,
+                    value5: params.value5,
+                    value6: params.value6,
+                    value7: params.value7,
+                    value8: params.value8,
+                    value9: params.value9,
+                    value10: params.value10,
                     value11: '0'
                 })}>
                     <Text style={styles.buttonText}>
@@ -72,16 +71,16 @@ export default () => {
                     </Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Results', {
-                    value1: navigation.getParam('value1', ''),
-                    value2: navigation.getParam('value2', ''),
-                    value3: navigation.getParam('value3', ''),
-                    value4: navigation.getParam('value4', ''),
-                    value5: navigation.getParam('value5', ''),
-                    value6: navigation.getParam('value6', ''),
-                    value7: navigation.getParam('value7', ''),
-                    value8: navigation.getParam('value8', ''),
-                    value9: navigation.getParam('value9', ''),
-                    value10: navigation.getParam('value10', ''),
+                    value1: params.value1,
+                    value2: params.value2,
+                    value3: params.value3,
+                    value4: params.value4,
+                    value5: params.value5,
+                    value6: params.value6,
+                    value7: params.value7,
+                    value8: params.value8,
+                    value9: params.value9,
+                    value10: params.value10,
                     value11: '0'
                 })}>
                     <Text style={styles.buttonText}>
@@ -89,16 +88,16 @@ export default () => {
                     </Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Results', {
-                    value1: navigation.getParam('value1', ''),
-                    value2: navigation.getParam('value2', ''),
-                    value3: navigation.getParam('value3', ''),
-                    value4: navigation.getParam('value4', ''),
-                    value5: navigation.getParam('value5', ''),
-                    value6: navigation.getParam('value6', ''),
-                    value7: navigation.getParam('value7', ''),
-                    value8: navigation.getParam('value8', ''),
-                    value9: navigation.getParam('value9', ''),
-                    value10: navigation.getParam('value10', ''),
+                    value1: params.value1,
+                    value2: params.value2,
+                    value3: params.value3,
+                    value4: params.value4,
+                    value5: params.value5,
+                    value6: params.value6,
+                    value7: params.value7,
+                    value8: params.value8,
+                    value9: params.value9,
+                    value10: params.value10,
                     value11: '1'
                 })}>
                     <Text style={styles.buttonText}>
@@ -106,16 +105,16 @@ export default () => {
                     </Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Results', {
-                    value1: navigation.getParam('value1', ''),
-                    value2: navigation.getParam('value2', ''),
-                    value3: navigation.getParam('value3', ''),
-                    value4: navigation.getParam('value4', ''),
-                    value5: navigation.getParam('value5', ''),
-                    value6: navigation.getParam('value6', ''),
-                    value7: navigation.getParam('value7', ''),
-                    value8: navigation.getParam('value8', ''),
-                    value9: navigation.getParam('value9', ''),
-                    value10: navigation.getParam('value10', ''),
+                    value1: params.value1,
+                    value2: params.value2,
+                    value3: params.value3,
+                    value4: params.value4,
+                    value5: params.value5,
+                    value6: params.value6,
+                    value7: params.value7,
+                    value8: params.value8,
+                    value9: params.value9,
+                    value10: params.value10,
                     value11: '2'
                 })}>
                     <Text style={styles.buttonText}>

@@ -13,15 +13,13 @@ import {
 import SearchDropdown from "../components/SearchDropdown";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {ManageProfileController} from './ManagePrileController/index'
-import { useNavigation } from "@react-navigation/native";
 
 //TODO: Resolver envio de body com o botão pular
 
 let job = require("../../jobs.json");
 const jobArr = [...job];
 //AsyncStorage.clear()
-const FirstPage = () => {
-  const navigation = useNavigation();
+const FirstPage = ({navigation}) => {
   
   const [searching, setSearching] = useState(false);
   const [jobs] = useState(jobArr);

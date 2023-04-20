@@ -3,10 +3,8 @@ import { View, Text } from 'react-native'
 import * as Device from 'expo-device'
 import Constants from 'expo-constants'
 import AsyncStorage from '@react-native-async-storage/async-storage'
-import { useNavigation } from "@react-navigation/native";
 
-const ManageProfile = () =>{
-    const navigation = useNavigation();
+const ManageProfile = () => {
     const [showFirstPage,setShowFirstPage] = useState("true")
     const [chosenJob,setChosenJob] = useState("Não Selecionado")
 
