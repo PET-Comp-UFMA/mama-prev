@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import {View, Text, StyleSheet, StatusBar, TouchableOpacity, Modal, Image} from 'react-native';
 
+import { MaterialIcons } from '@expo/vector-icons';
+
 export default ({route, navigation}) => {
     const[visible, setVisible] = useState(false);
     const { params } = route
@@ -19,7 +21,7 @@ export default ({route, navigation}) => {
                             <Text style={{textAlign: 'center', marginVertical: 10, fontSize: 20, color: "#ffffff", marginLeft:20, fontWeight: "bold"}}>Título da Página</Text>
                         </View>
                         <TouchableOpacity style={styles.closeButton} onPress = {() => {setVisible(false)}}>
-                            <Image style={styles.closeImg} source={require('../../assets/close-icon.png')}/>
+                            <MaterialIcons name="close" size={30} color="white" />
                         </TouchableOpacity>
                     </View>
                     <Text style={{textAlign: 'center', marginVertical: 10, marginHorizontal:20, fontSize: 16}}>
@@ -37,12 +39,12 @@ export default ({route, navigation}) => {
         <View style={styles.navigationBar}>
             <View style={{flexDirection: "row"}}>
                 <TouchableOpacity onPress={() => navigation.goBack()}>
-                    <Image style={styles.navigationImg} source={require('../../assets/back-icon.png')}/>
+                     <MaterialIcons name="chevron-left" size={40} color="white" />
                 </TouchableOpacity>
                 <Text style={styles.textNavigation}> Ferramenta de Avaliação ...</Text>
             </View>
             <TouchableOpacity onPress={() => {setVisible(true)}}>
-                <Image style={styles.navigationImg} source={require('../../assets/info-icon.png')}/>
+                <MaterialIcons name="info-outline" size={38} color="white" />
             </TouchableOpacity>
         </View>
         

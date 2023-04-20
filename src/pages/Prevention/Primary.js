@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import {View, Text, StyleSheet, Image, StatusBar, TouchableOpacity, Dimensions, ScrollView} from 'react-native';
 
+import { MaterialIcons } from '@expo/vector-icons';
+
 export default ({navigation}) => {
 
     const [shouldShow1, setShouldShow1] = useState(false);
@@ -11,7 +13,7 @@ export default ({navigation}) => {
             <StatusBar hidden={true} />
             <View style={styles.navigationBar}>
                 <TouchableOpacity onPress={() => navigation.goBack()}>
-                    <Image style={styles.backImg} source={require('../../assets/back-icon.png')}/>
+                    <MaterialIcons name="chevron-left" size={40} color="white" />
                 </TouchableOpacity>
                 <Text style={styles.textNavigation}> Prevenção Primária</Text>
             </View>

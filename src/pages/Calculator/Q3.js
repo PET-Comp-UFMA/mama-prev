@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { View, Text, StyleSheet, StatusBar, TouchableOpacity, Modal, Image } from "react-native";
 import { Picker } from '@react-native-picker/picker';
 
+import { MaterialIcons } from '@expo/vector-icons';
+
 export default ({route, navigation}) => {
     const[visible, setVisible] = useState(false);
     const [selectedAge, setSelectedAge] = useState('35')
@@ -107,10 +109,7 @@ export default ({route, navigation}) => {
                     setVisible(false);
                   }}
                 >
-                  <Image
-                    style={styles.closeImg}
-                    source={require("../../assets/close-icon.png")}
-                  />
+                  <MaterialIcons name="close" size={30} color="white" />
                 </TouchableOpacity>
               </View>
               <Text
@@ -138,10 +137,7 @@ export default ({route, navigation}) => {
         <View style={styles.navigationBar}>
           <View style={{ flexDirection: "row" }}>
             <TouchableOpacity onPress={() => navigation.goBack()}>
-              <Image
-                style={styles.navigationImg}
-                source={require("../../assets/back-icon.png")}
-              />
+              <MaterialIcons name="chevron-left" size={40} color="white" />
             </TouchableOpacity>
             <Text style={styles.textNavigation}>
               {" "}
@@ -153,10 +149,7 @@ export default ({route, navigation}) => {
               setVisible(true);
             }}
           >
-            <Image
-              style={styles.navigationImg}
-              source={require("../../assets/info-icon.png")}
-            />
+            <MaterialIcons name="info-outline" size={38} color="white" />
           </TouchableOpacity>
         </View>
 

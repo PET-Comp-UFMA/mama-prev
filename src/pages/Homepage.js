@@ -4,6 +4,8 @@ import NewButton from '../components/NewButton';
 //import AsyncStorage from '@react-native-async-storage/async-storage';
 //import ManageProfile from './ManageProfile'
 
+import { MaterialIcons } from '@expo/vector-icons';
+
 const Homepage = ({navigation}) => {
     const[visible, setVisible] = useState(true);
 
@@ -21,7 +23,7 @@ const Homepage = ({navigation}) => {
                                 <Text style={{textAlign: 'center', marginVertical: 10, fontSize: 20, color: "#ffffff", marginLeft:20, fontWeight: "bold"}}>Atenção!</Text>
                             </View>
                             <TouchableOpacity style={styles.closeButton} onPress = {() => {setVisible(false)}}>
-                                <Image style={styles.closeImg} source={require('../assets/close-icon.png')}/>
+                                <MaterialIcons name="close" size={30} color="white" />
                             </TouchableOpacity>
                         </View>
                         <Text style={{textAlign: 'center', marginBottom: 10, marginTop:20, marginHorizontal:20, fontSize: 16}}>

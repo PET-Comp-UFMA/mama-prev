@@ -1,13 +1,15 @@
 import React from 'react';
 import {View, Text, StyleSheet,StatusBar, Image, TouchableOpacity, ScrollView} from 'react-native';
 
+import { MaterialIcons } from '@expo/vector-icons';
+
 export default ({navigation}) => {
     return(
         <View style={styles.container}>
             <StatusBar hidden={true} />
             <View style={styles.navigationBar}>
                 <TouchableOpacity onPress={() => navigation.goBack()}>
-                    <Image style={styles.backImg} source={require('../assets/back-icon.png')}/>
+                    <MaterialIcons name="chevron-left" size={40} color="white" />
                 </TouchableOpacity>
                 <Text style={styles.textNavigation}> Ferramentas Úteis</Text>
             </View>
