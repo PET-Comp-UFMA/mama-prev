@@ -28,7 +28,7 @@ const Homepage = ({navigation}) => {
                         </View>
                         <Text style={{textAlign: 'center', marginBottom: 10, marginTop:20, marginHorizontal:20, fontSize: 16}}>
                         Você profissional de saúde também precisa se cuidar!{"\n"}{"\n"}
-                        Fique atento as recomendações quanto a presença de sinais e sintomas, fatores de risco e periodicidade dos exames para rastreamento e detecção precoce do câncer de mama.{"\n"}{"\n"}
+                        Fique atento às recomendações quanto a presença de sinais e sintomas, fatores de risco e periodicidade dos exames para rastreamento e detecção precoce do câncer de mama.{"\n"}{"\n"}
                         Cuide-se!
                         </Text>
                         <NewButton textoPrincipal="Fechar"
@@ -41,14 +41,14 @@ const Homepage = ({navigation}) => {
                         <Text style={styles.text}>Muito bem! Agora selecione a opção desejada para começarmos</Text>
                     </View>
                     <View style={styles.button }>
-                        <NewButton textoPrincipal="Sobre o aplicativo" navigation = {() => navigation.navigate("Sobre")}/>
-                    </View>
-                    <View style={styles.button }>
                         <NewButton textoPrincipal="Ferramentas úteis" navigation = {() => navigation.navigate("Avaliation")}/> 
                     </View>
                     <View style={styles.button }>
                         <NewButton textoPrincipal="Sobre prevenção do cancêr de mama" navigation = {() => navigation.navigate("Information")}/>
                     </View> 
+                    <View style={styles.button }>
+                        <NewButton textoPrincipal="Sobre o aplicativo" navigation = {() => navigation.navigate("Sobre")}/>
+                    </View>
                 </View>
 
         </View>

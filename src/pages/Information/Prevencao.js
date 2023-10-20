@@ -11,7 +11,7 @@ export default ({navigation}) => {
         <StatusBar hidden={true} />
         <View style={styles.navigationBar}>
             <TouchableOpacity onPress={() => navigation.goBack()}>
-                 <MaterialIcons name="chevron-left" size={40} color="white" />
+                <MaterialIcons name="chevron-left" size={50} color="white"/>
             </TouchableOpacity>
             <Text style={styles.textNavigation}> Prevenção</Text>
         </View>

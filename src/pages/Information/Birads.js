@@ -10,7 +10,7 @@ export default ({navigation}) => {
             <StatusBar hidden={true} />
             <View style={styles.navigationBar}>
                 <TouchableOpacity onPress={() => navigation.goBack()}>
-                    <MaterialIcons name="chevron-left" size={40} color="white" />
+                    <MaterialIcons name="chevron-left" size={50} color="white" />
                 </TouchableOpacity>
                 <Text style={styles.textNavigation}> BI-RADS</Text>
             </View>
@@ -29,6 +29,9 @@ export default ({navigation}) => {
                 <ScrollView horizontal={true}>
                     <Image style={styles.img} source={require('../../assets/tabela-birads2.png')}/>
                 </ScrollView>
+                <Text style={styles.imgText}>
+                        Deslize para a direta para ver o restante da tabela.
+                </Text>
             </ScrollView>
         </View>
     )
@@ -41,7 +44,6 @@ const styles = StyleSheet.create({
     },
     textContainer:{
         marginHorizontal:10,
-        marginBottom:25,
         alignItems: "center"
     },
     firstText:{
@@ -68,6 +70,13 @@ const styles = StyleSheet.create({
         color: "#ee88b6",
         marginVertical: 5,
         textAlign: "center",
+    },
+    imgText:{
+        fontSize:15,
+        textAlign: "center",
+        opacity: 0.7,
+        marginVertical: 10,
+        marginHorizontal: 20
     },
     text:{
         fontSize:18,

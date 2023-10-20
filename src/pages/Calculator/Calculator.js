@@ -38,7 +38,7 @@ export default ({navigation}) => {
             <View style={styles.navigationBar}>
                 <View style={{flexDirection: "row"}}>
                     <TouchableOpacity onPress={() => navigation.goBack()}>
-                         <MaterialIcons name="chevron-left" size={40} color="white" />
+                         <MaterialIcons name="chevron-left" size={50} color="white" />
                     </TouchableOpacity>
                     <Text style={styles.textNavigation}> Ferramenta de Avaliação ...</Text>
                 </View>

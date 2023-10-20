@@ -24,7 +24,7 @@ export default ({navigation}) => {
                             </TouchableOpacity>
                         </View>
                         <Text style={{textAlign: 'center', marginTop: 20, marginVertical: 10, marginHorizontal:20, fontSize: 16}}>
-                            Sobre Prevenção do Cancêr de Mama
+                            Sobre Prevenção do Câncer de Mama
                         </Text>
                         <TouchableOpacity style={styles.buttonClose2} onPress={() => {setVisible(false)}}>
                             <Text style={styles.textButton}>
@@ -38,7 +38,7 @@ export default ({navigation}) => {
             <View style={styles.navigationBar}>
                 <View style={{flexDirection: "row"}}>
                     <TouchableOpacity onPress={() => navigation.goBack()}>
-                        <MaterialIcons name="chevron-left" size={40} color="white" />
+                        <MaterialIcons name="chevron-left" size={50} color="white" />
                     </TouchableOpacity>
                     <Text style={styles.textNavigation}> Sobre Prevenção ...</Text>
                 </View>

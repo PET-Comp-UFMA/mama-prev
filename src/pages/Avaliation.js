@@ -9,14 +9,17 @@ export default ({navigation}) => {
             <StatusBar hidden={true} />
             <View style={styles.navigationBar}>
                 <TouchableOpacity onPress={() => navigation.goBack()}>
-                    <MaterialIcons name="chevron-left" size={40} color="white" />
+                    <MaterialIcons name="chevron-left" size={50} color="white" />
                 </TouchableOpacity>
                 <Text style={styles.textNavigation}> Ferramentas Úteis</Text>
             </View>
             <ScrollView style={styles.container}>
                 <View>
                     <Text style={styles.text}>
-                        Estas duas ferramentas de avaliação vão auxiliar os profissionais tanto em suas auto avaliações, quanto para utilização com suas pacientes no momento da assistência.
+                        Estas duas ferramentas de avaliação irão auxiliar os profissionais tanto em suas auto avaliações, quanto para utilização com suas pacientes no momento da assistência.
+                    </Text>
+                    <Text style={styles.text}>
+                        Clique em uma das ferramentas para mais detalhes.
                     </Text>
                 </View>
                 <View style={styles.buttonsContainer}>
