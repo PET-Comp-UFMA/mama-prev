@@ -27,8 +27,8 @@ const Homepage = ({navigation}) => {
                             </TouchableOpacity>
                         </View>
                         <Text style={{textAlign: 'center', marginBottom: 10, marginTop:20, marginHorizontal:20, fontSize: 16}}>
-                        Você profissional de saúde também precisa se cuidar!{"\n"}{"\n"}
-                        Fique atento às recomendações quanto a presença de sinais e sintomas, fatores de risco e periodicidade dos exames para rastreamento e detecção precoce do câncer de mama.{"\n"}{"\n"}
+                        Você profissional de saúde, também, precisa se cuidar!{"\n"}{"\n"}
+                        Fique atento às recomendações quanto à presença de sinais e sintomas, aos fatores de risco e à periodicidade dos exames para rastreamento e detecção precoce do câncer de mama.{"\n"}{"\n"}
                         Cuide-se!
                         </Text>
                         <NewButton textoPrincipal="Fechar"

@@ -57,7 +57,7 @@ export default ({navigation}) => {
             <ScrollView style={styles.container}>
                 <View style={styles.textContainer}>
                     <Text style={styles.text}>
-                        Refere-se a aplicação de testes ou exames em uma população sem sinais e sintomas sugestivos da doença, para identificar possíveis alterações sugestivas de câncer e, posteriormente, encaminhar as mulheres com resultados anormais para investigação diagnóstica.{"\n"}Cabe ressaltar, que as recomendações para os exames estão associadas a diminuição comprovada da morbimortalidade.
+                        Refere-se à aplicação de testes ou exames em uma população sem sinais e sintomas sugestivos da doença, para identificar possíveis alterações sugestivas de câncer e, posteriormente, encaminhar as mulheres com resultados anormais para investigação diagnóstica.{"\n"}As recomendações para os exames estão associadas à diminuição comprovada da morbimortalidade.
                     </Text>
                 </View>
 
@@ -75,13 +75,13 @@ export default ({navigation}) => {
                             É uma radiografia das mamas feita por um mamógrafo (equipamento de raio-X), que identifica alterações suspeitas de câncer antes do surgimento dos sintomas. 
                         </Text>
                         <Text style={styles.text}>
-                            O Instituto Nacional do Câncer José Alencar Gomes da Silva (INCA) recomenda a realização desse exame de 50 à 69 anos a cada dois anos. Além disso, mulheres com risco aumentado de desenvolver câncer de mama, relacionados aos fatores genéticos e hereditários, devem iniciar o acompanhamento com exme clínico das mamas e mamografia aos 35 anos.
+                            O Instituto Nacional do Câncer José Alencar Gomes da Silva (INCA) recomenda a realização desse exame de 50 a 69 anos a cada dois anos. Além disso, mulheres com risco aumentado de desenvolver câncer de mama, relacionados aos fatores genéticos e hereditários, devem iniciar o acompanhamento com exame clínico das mamas e mamografia aos 35 anos.
                         </Text>
                         <Text style={styles.text}>
-                            A Sociedade Brasileira de Mastologia (SBM) recomenda de 40 à 69 anos anualmente.
+                            A Sociedade Brasileira de Mastologia (SBM) recomenda de 40 a 69 anos, anualmente.
                         </Text>
                         <Text style={styles.text}>
-                            A mulher com casos de câncer de mama e/ou ovário na família (mãe, irmã ou filha), ou mutações genéticas, deverá começar fazer a mamografia mais cedo, conforme orientação do seu mastologista.
+                            A mulher com casos de câncer de mama e/ou ovário na família (mãe, irmã ou filha), ou mutações genéticas, deverá começar fazer a mamografia mais cedo, conforme orientação do mastologista.
                         </Text>
                         <TouchableOpacity style={styles.buttonRef} onPress={() => setShouldShow1(!shouldShow1)}>
                             <Text style={styles.textButton}>
@@ -114,8 +114,8 @@ export default ({navigation}) => {
                             Entretanto, não é mais recomendado, o que o INCA e a SBM indicam é o autoconhecimento das mamas, que consiste nas medidas de palpação das mamas para familiarização dos aspectos normais e identificação precoce de eventuais alterações, sem necessidade de que seja utilizada uma técnica de autoexame ou de seguir uma periodicidade regular e fixa, valorizando a descoberta casual de pequenas alterações mamárias suspeitas.
                         </Text>
                         <Text style={styles.text}>
-                            Atenção!
-                            {"\n"}É importante conhecer os tabus existentes relacionados ao conhecimento do corpo e auxiliar as mulheres por meio de acolhimento, educação em saúde entre outras estratégias.
+                            Atenção
+                            {"\n"}É importante conhecer os tabus existentes relacionados ao conhecimento do corpo e auxiliar as mulheres, por meio de acolhimento, educação em saúde, entre outras estratégias.
                         </Text>
                         <TouchableOpacity style={styles.buttonRef} onPress={() => setShouldShow2(!shouldShow2)}>
                             <Text style={styles.textButton}>
@@ -142,7 +142,7 @@ export default ({navigation}) => {
                 (   
                     <View style={styles.textContainer}>
                         <Text style={styles.text}>
-                            É semelhante ao autoexame, porém é realizado pelo profissional médico ou enfermeiro, e é mais especifico pois inclui uma avaliação mais criteriosa, iniciando com a inspeção estática e dinâmica, a palpação e finalizando com a expressão mamária (ordenha firme e delicada).
+                            É semelhante ao autoexame, porém é realizado pelo profissional médico ou enfermeiro, e é mais específico pois inclui uma avaliação mais criteriosa, iniciando com a inspeção estática e dinâmica, a palpação e finalizando com a expressão mamária (ordenha firme e delicada).
                         </Text>
                         <Text style={styles.text}>
                             O INCA apresenta ausência para recomendação desse exame, pois o balanço entre possíveis danos e benefícios é incerto.
@@ -175,10 +175,10 @@ export default ({navigation}) => {
                 (   
                     <View style={styles.textContainer}>
                         <Text style={styles.text}>
-                            É um exame que mostra imagens em alta definição, através de campos magnéticos e pulsos de radiofrequência. Apresenta alta sensibilidade e pode detectar canceres de mama que a mamografia e a ultrassonografia não conseguem. Além disso, ao contrário da mamografia, a ressonância magnética não utiliza radiação ionizante.
+                            É um exame que mostra imagens em alta definição, por meio de campos magnéticos e pulsos de radiofrequência. Apresenta alta sensibilidade e pode detectar canceres de mama que a mamografia e a ultrassonografia não conseguem. Além disso, ao contrário da mamografia, a ressonância magnética não utiliza radiação ionizante.
                         </Text>
                         <Text style={styles.text}>
-                            Apesar disso, O INCA e a SBM não recomendam a realização deste tipo de procedimento para rastreamento para a população geral, pois tem alto custo e baixa disponibilidade e, por isso, apenas em casos específicos, pode ser realizada em mulheres com alto risco de desenvolver a doença.
+                            Apesar disso, O INCA e a SBM não recomendam a realização deste tipo de procedimento para rastreamento para população geral, pois tem alto custo e baixa disponibilidade e, por isso, apenas em casos específicos, pode ser realizada em mulheres com alto risco de desenvolver a doença.
                         </Text>
                         <TouchableOpacity style={styles.buttonRef} onPress={() => setShouldShow4(!shouldShow4)}>
                             <Text style={styles.textButton}>
@@ -207,7 +207,7 @@ export default ({navigation}) => {
                 (   
                     <View style={styles.textContainer}>
                         <Text style={styles.text}>
-                            É um exame de imagem realizado pelo aparelho transdutor que emite ondas sonoras de alta frequência causando vibração nos tecidos. Porém essas imagens possuem menos definição que a emitida pela ressonância. O objetivo desse exame é também de identificar possíveis alterações nas mamas. Muitas vezes, o uso da ultrassonografia como teste de rastreamento é feito com a intenção de complementar a mamografia realizada em mulheres jovens com mamas densas e resultado negativo, visando aumentar a sensibilidade do rastreamento.
+                            É um exame de imagem realizado pelo aparelho transdutor que emite ondas sonoras de alta frequência, causando vibração nos tecidos. Porém, essas imagens possuem menos definição que a emitida pela ressonância. O objetivo desse exame é, também, identificar possíveis alterações nas mamas. Muitas vezes, o uso da ultrassonografia como teste de rastreamento é feito com a intenção de complementar a mamografia realizada em mulheres jovens com mamas densas e resultado negativo, visando aumentar a sensibilidade do rastreamento.
                         </Text>
                         <Text style={styles.text}>
                             O INCA e a SBM não recomendam a realização deste tipo de procedimento para rastreamento.

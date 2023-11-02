@@ -85,11 +85,11 @@ export default ({route, navigation}) => {
             </Text>
             <View style={styles.textContainer}>
                 <Text style={styles.Boldtext}>
-                    Risco de desenvolver câncer de mama nos próximos 5 anos
+                    Risco de desenvolver câncer de mama nos próximos cinco anos
                 </Text>
                 <Text style={styles.text}>
                     Risco do paciente: {data.risk}%
-                    {"\n"}Risco médio da população:{data.averageFiveRisk}%
+                    {"\n"}Risco médio da população: {data.averageFiveRisk}%
                 </Text>
             </View>
             <View style={styles.textContainer}>
@@ -98,7 +98,7 @@ export default ({route, navigation}) => {
                 </Text>
                 <Text style={styles.text}>
                     Risco do paciente: {data.lifetime_patient_risk}%
-                    {"\n"}Risco médio da população:{data.lifetime_average_risk}%
+                    {"\n"}Risco médio da população: {data.lifetime_average_risk}%
                 </Text>
             </View>
             <View style={styles.buttonsContainer}>

@@ -50,16 +50,16 @@ export default ({navigation}) => {
             <ScrollView style={styles.container}>
                 <View>
                     <Text style={styles.text}>
-                        Esta ferramenta de avaliação de risco de câncer de mama é baseada em um modelo estatístico conhecido como Modelo Gail, que foi traduzido, adaptado culturalmente e validado para o português brasileiro.
+                        Esta ferramenta de avaliação de risco de câncer de mama é baseada no modelo estatístico conhecido como Modelo Gail, traduzido, adaptado culturalmente e validado para o português brasileiro.
                     </Text>
                     <Text style={styles.text}>
                         A ferramenta usa as informações pessoais de uma mulher para estimar o risco de desenvolver câncer de mama.
                     </Text>
                     <Text style={styles.text}>
-                        O cálculo apresentado neste aplicativo é feito externamente, utilizando a calculadora <Text style={styles.textIta}>"Breast Cancer Risk Assessment Tool" </Text> disponível em: {"\n"}https://bcrisktool.cancer.gov/calculator.html
+                        O cálculo apresentado neste aplicativo é feito externamente, utilizando a calculadora <Text style={styles.textIta}>"Breast Cancer Risk Assessment Tool" </Text>, disponível em: {"\n"}https://bcrisktool.cancer.gov/calculator.html
                     </Text>
                     <Text style={styles.text}>
-                        OBS.: Esta ferramenta ainda não está calibrada para a população brasileira, porém, Gail recomenda que seja utilizada a etnia “Hispânica/Latina” nascida fora dos EUA, que é a que mais se aproxima.
+                        OBS.: Esta ferramenta ainda não está calibrada para a população brasileira, porém, Gail recomenda que seja utilizada a etnia “Hispânica/Latina” nascida fora dos EUA, a que mais se aproxima.
                     </Text>
                 </View>
                 <View style={styles.buttonsContainer}>

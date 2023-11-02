@@ -17,18 +17,18 @@ export default ({navigation}) => {
                 <View style={styles.textContainer}>
                     <Text style={styles.titleText}>Apresentação</Text>
                     <Text style={styles.text}>
-                        O câncer de mama é uma doença que vem apresentando alta incidência em todo o mundo. Para o triênio 2020-2022 estima-se mais de 66 mil novos casos da doença no Brasil.
+                        O câncer de mama é uma doença que vem apresentando alta incidência em todo o mundo. Para o triênio 2020-2022, estima-se mais de 66 mil novos casos da doença no Brasil.
                     </Text>
                     <Text style={styles.text}>    
-                        Diante disso, o trabalho dos profissionais de saúde é fundamental para auxiliar em uma possível redução das taxas de incidência e mortalidade dessa doença. Assim, os profissionais precisam estar aptos para prestarem assistência de qualidade.
+                        Diante disso, o trabalho dos profissionais de saúde é fundamental para auxiliar na possível redução das taxas de incidência e mortalidade dessa doença. Assim, os profissionais precisam estar aptos para prestarem assistência de qualidade.
                     </Text>
                     <Text style={styles.text}>
-                        Neste contexto o aplicativo MAMAprev foi desenvolvido com o intuito de auxiliar os profissionais da saúde que atuam no cuidado das pessoas com mama, por meio de uma ferramenta informativa segura e baseada em evidências científicas, no fortalecimento das ações de prevenção do câncer de mama oportunamente, ou seja, aproveitando a presença da mulher no serviço de saúde independente do motivo, para informá-la sobre a doença e procedimentos de triagem, fatores de risco, rastreamento, favorecendo o diálogo a respeito da realização dos exames para detecção precoce e rastreamento do câncer de mama.
+                        Neste contexto o aplicativo MAMAprev foi desenvolvido, com intuito de auxiliar os profissionais da saúde que atuam no cuidado das pessoas com mama, por meio de uma ferramenta informativa segura e baseada em evidências científicas, no fortalecimento das ações de prevenção do câncer de mama oportunamente, ou seja, aproveitando a presença da mulher no serviço de saúde, independente do motivo, para informá-la sobre a doença e os procedimentos de triagem, fatores de risco, rastreamento, favorecendo o diálogo a respeito da realização dos exames para detecção precoce e rastreamento do câncer de mama.
                     </Text>
 
                     <Text style={styles.titleText}>Sobre Nós </Text>
                     <Text style={styles.text}>    
-                        Este aplicativo é produto de uma dissertação de mestrado do Programa de Pós-Graduação em Saúde e Tecnologia (PPGST) da Universidade Federal do Maranhão (UFMA) campus avançado Imperatriz, tendo como pesquisadoras responsáveis a professora doutora Adriana Gomes Nogueira Ferreira (adriana.nogueira@ufma.br) e a mestranda Rafaela Cristina Araújo Gomes (rca.gomes@discente.ufma.br). 
+                        Este aplicativo é produto de uma dissertação de mestrado do Programa de Pós-Graduação em Saúde e Tecnologia (PPGST), da Universidade Federal do Maranhão (UFMA), campus avançado Imperatriz, tendo como pesquisadoras responsáveis a professora doutora Adriana Gomes Nogueira Ferreira (adriana.nogueira@ufma.br) e a mestranda Rafaela Cristina Araújo Gomes (rca.gomes@discente.ufma.br). 
                     </Text>
                     <Text style={styles.text}>
                         A pesquisa faz parte de um projeto financiado pela Fundação de Amparo à Pesquisa e ao Desenvolvimento Científico e Tecnológico do Maranhão (FAPEMA), intitulado “PREVENÇÃO SECUNDÁRIA DO CÂNCER DE MAMA: USO DE APLICATIVO MÓVEL PARA CAPACITAÇÃO DE ENFERMEIROS”.

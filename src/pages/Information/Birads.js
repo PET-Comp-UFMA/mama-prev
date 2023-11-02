@@ -23,7 +23,7 @@ export default ({navigation}) => {
                     </Text>
                     <Text style={styles.text}>
                         O termo BI-RADS é um acrônimo em inglês para <Text style={styles.textIta}>Breast Image Reporting and Data System</Text>, é uma forma padronizada de relatar os achados da mamografia, auxiliando na redução do risco de interpretações subjetivas de laudos.
-                        A classificação também ajuda a saber quando a investigação de um nódulo suspeito deve ser complementada com outros métodos e quando ela pode ser satisfatoriamente interrompida apenas com o resultado da mamografia. O BI-RADS também auxilia na padronização das condutas médicas frente aos resultados e ainda apresenta uma probabilidade de câncer de mama de acordo com as categorias.
+                        A classificação também ajuda a saber quando a investigação de um nódulo suspeito deve ser complementada com outros métodos e quando ela pode ser satisfatoriamente interrompida apenas com o resultado da mamografia. O BI-RADS também auxilia na padronização das condutas médicas frente aos resultados e, ainda, apresenta probabilidade de câncer de mama, de acordo com as categorias.
                     </Text>
                 </View>
                 <ScrollView horizontal={true}>

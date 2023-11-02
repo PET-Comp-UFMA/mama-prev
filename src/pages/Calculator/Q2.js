@@ -57,7 +57,7 @@ export default ({route, navigation}) => {
             e/ou BRCA2, ou diagnóstico
             de alguma síndrome
             genética que possa ser
-            associada a elevado risco de
+            associada ao elevado risco de
             câncer de mama?
         </Text>
         <View style={styles.buttonsContainer}>

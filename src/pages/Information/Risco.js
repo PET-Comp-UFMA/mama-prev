@@ -64,7 +64,7 @@ export default ({navigation}) => {
                         {"\n"}- Ingestão de álcool;
                         {"\n"}- Uso de tabaco;
                         {"\n"}- Exposição frequente a Raio X na região do tórax.
-                        {"\n\n"}OBS.: É possível que mesmo que se mude os hábitos e melhore os comportamentos, ainda se desenvolva o câncer de mama.
+                        {"\n\n"}OBS.: É possível que mesmo que se mudem os hábitos e melhorem os comportamentos, ainda se desenvolva o câncer de mama.
                     </Text>
                 </View>
                 <View>
@@ -89,7 +89,7 @@ export default ({navigation}) => {
                     </Text>
                 </View>
                 <View>
-                    <Text style={styles.titleText2}>ATENÇÃO:</Text>
+                    <Text style={styles.titleText2}>ATENÇÃO</Text>
                     <Text style={styles.text}>
                         A presença de um ou mais desses fatores de risco não significa que a mulher necessariamente terá a doença.
                     </Text>
@@ -97,10 +97,10 @@ export default ({navigation}) => {
                 <View>
                     <Text style={styles.titleText1}>Fatores de risco para câncer de mama em homens</Text>
                     <Text style={styles.text}>
-                        - Desordens no balanço hormonal com excesso de estrogênio e deficiência de testosterona;
+                        - Desordens no balanço hormonal, com excesso de estrogênio e deficiência de testosterona;
                         {"\n"}- Alterações testiculares, doenças hepáticas, obesidade, Síndrome de Klinefelter;
-                        {"\n"}- Usode estrógeno exógenos e anti-androgênios;
-                        {"\n"}- Exposições ocupacionais a radiação ionizante;
+                        {"\n"}- Uso de estrógeno exógenos e anti androgênios;
+                        {"\n"}- Exposições ocupacionais à radiação ionizante;
                         {"\n"}- Fatores ambientais (álcool);
                         {"\n"}- Fator de risco genético, como história familiar de câncer de mama e mutação de genes relacionados ao câncer de mama como o BRCA1.
                     </Text>

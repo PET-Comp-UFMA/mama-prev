@@ -20,7 +20,7 @@ export default ({navigation}) => {
             <ScrollView style={styles.container}>
                 <View style={styles.textContainer}>
                     <Text style={styles.text}>
-                        Relaciona-se com o controle dos fatores de risco modificáveis e incentivo a adoção de comportamentos protetores, visto que estes aspectos podem ajudar a reduzir cerca de 30% o risco de desenvolver a doença.
+                        Relaciona-se com o controle dos fatores de risco modificáveis e incentivo à adoção de comportamentos protetores, visto que estes aspectos podem ajudar a reduzir cerca de 30% o risco de desenvolver a doença.
                     </Text>
                     <Text style={styles.text}>
                         Para mulheres com alto risco de ter a doença pelos fatores genéticos e hereditários, existem também a mastectomia profilática com reconstrução mamária e a quimioprevenção.
@@ -44,7 +44,7 @@ export default ({navigation}) => {
                     (   
                         <View>
                             <Text style={styles.text}>
-                                Uma ingestão rica em alimentos de origem vegetal como frutas, legumes, verduras, cereais integrais, feijões e outras leguminosas, e pobre em alimentos ultraprocessados, como aqueles prontos para consumo ou prontos para aquecer e bebidas açucaradas, podem prevenir novos casos de câncer.
+                                A ingestão rica em alimentos de origem vegetal, como frutas, legumes, verduras, cereais integrais, feijões e outras leguminosas, e pobre em alimentos ultraprocessados, como aqueles prontos para consumo ou para aquecer, e bebidas açucaradas, podem prevenir novos casos de câncer.
                             </Text>
                             <View style={styles.textContainer}>
                                 <TouchableOpacity style={styles.buttonRef} onPress={() => setShouldShow1(!shouldShow1)}>
@@ -62,14 +62,14 @@ export default ({navigation}) => {
                         </TouchableOpacity>)}
                     </View>
                     <Text style={styles.text}>
-                        - Praticar atividade física (de preferência movimentar-se todos os dias);
+                        Praticar atividade física (de preferência movimentar-se todos os dias);
                     </Text>
                     <View style={styles.textContainer}>
                     {shouldShow2 ?
                     (   
                         <View>
                             <Text style={styles.text}>
-                                Realize atividades físicas como parte da rotina diária, começando por aquelas que lhe deem prazer, como caminhar, andar de bicicleta, dançar e nadar. Quanto mais se movimenta o corpo, maior a proteção contra o câncer. Caminhar ou ir de bicicleta para o trabalho, subir pelas escadas em vez de usar os elevadores, estabelecer momentos com a família e/ou amigos para atividades ao ar livre e/ou em praças públicas são algumas opções para aumentar a atividade física no dia a dia. Não há necessidade de serem aquelas modalidades sistematizadas ou que demandem a contratação de serviços como academias, que também podem ser opções. Existem recomendações que sugerem a realização de pelo menos 30 minutos de atividade física por dia, mas já há evidências de que mesmo quando realizada por menos tempo a atividade física traz benefícios para a prevenção de câncer e para a saúde. Assim, se movimente naquelas modalidades de atividade física que você gostar. A duração (tempo) torna-se mais um elemento, não o principal. É importante limitar hábitos sedentários como assistir à televisão, usar por muito tempo celular, tablet e computador ou jogar videogame.
+                                Realize atividades físicas como parte da rotina diária, começando por aquelas que lhe deem prazer, como caminhar, andar de bicicleta, dançar e nadar. Quanto mais se movimenta o corpo, maior a proteção contra o câncer. Caminhar ou ir de bicicleta para o trabalho, subir pelas escadas em vez de usar os elevadores, estabelecer momentos com a família e/ou amigos para atividades ao ar livre e/ou em praças públicas são algumas opções para aumentar a atividade física no dia a dia. Não há necessidade de serem aquelas modalidades sistematizadas ou que demandem a contratação de serviços como academias, que também podem ser opções. Existem recomendações que sugerem a realização de pelo menos 30 minutos de atividade física por dia, mas já há evidências de que mesmo quando realizada por menos tempo, a atividade física traz benefícios para a prevenção de câncer e a saúde. Assim, movimente-se naquelas modalidades de atividade física que você gostar. A duração (tempo) torna-se mais um elemento, não o principal. É importante limitar hábitos sedentários como assistir à televisão, usar por muito tempo celular, tablet e computador ou jogar videogame.
                             </Text>
                             <View style={styles.textContainer}>
                                 <TouchableOpacity style={styles.buttonRef} onPress={() => setShouldShow2(!shouldShow2)}>
@@ -87,7 +87,7 @@ export default ({navigation}) => {
                         </TouchableOpacity>)}
                     </View>
                     <Text style={styles.text}>
-                        - Amamentar.
+                        Amamentar.
                     </Text>
                 </View>
                 <View style={styles.textContainer}>
@@ -101,7 +101,7 @@ export default ({navigation}) => {
                         A redução absoluta do risco de câncer de mama varia de 2-7%, dependendo da idade de realização da cirurgia , geralmente até 40 anos.
                     </Text>
                     <Text style={styles.text}>
-                        A decisão na indicação da cirurgia profilática bilateral deve ser discutida com a paciente levando-se em consideração todos os riscos e benefícios envolvidos. 
+                        A decisão na indicação da cirurgia profilática bilateral deve ser discutida com a paciente, considerando os riscos e benefícios envolvidos. 
                     </Text>
                 </View>
                 <View style={styles.textContainer}>
@@ -115,7 +115,7 @@ export default ({navigation}) => {
                         De acordo com o Instituto Nacional do Câncer José Alencar Gomes da Silva (INCA), o SUS não utiliza medicamentos quimiopreventivos.
                     </Text>
                     <Text style={styles.text}>
-                        De acordo com a Sociedade Brasileira de Mastologia (SBM): Pacientes com risco de Gail ≥ 1.7, mais de 35 anos de idade, expectativa de vida superior a 10 anos ou com carcinoma lobular in situ devem usar um desses medicamentos por 5 anos:
+                        De acordo com a Sociedade Brasileira de Mastologia (SBM), pacientes com risco de Gail ≥ 1.7, mais de 35 anos de idade, expectativa de vida superior a 10 anos ou com carcinoma lobular in situ devem usar um desses medicamentos por cinco anos.
                     </Text>
                 </View>
                 <View style={styles.imgContainer}>

@@ -33,13 +33,13 @@ export default ({navigation}) => {
                         O câncer de mama é uma doença causada pela multiplicação desordenada de células da mama. Esse processo gera células anormais que se multiplicam, formando um tumor.
                     </Text>
                     <Text style={styles.text}>
-                        Menos de 1% dos cânceres de mama acometem homens. No entanto, tem apresentado aumento na sua incidência nos últimos anos. Apresenta ainda maior mortalidade quando comparado ao câncer de mama em mulheres, grande parte em razão do diagnóstico tardio.
+                        Menos de 1% dos cânceres de mama acometem homens. No entanto, tem apresentado aumento na incidência nos últimos anos. Apresenta ainda maior mortalidade, quando comparado ao câncer de mama em mulheres, grande parte em razão do diagnóstico tardio.
                     </Text>
                     <View style={styles.textContainer}>
                         <Text style={styles.titleText}>Como ele se manifesta?</Text>
                     </View>
                     <Text style={styles.text}>
-                        Na maioria das vezes se manifesta com um nódulo na mama, mas também pode se apresentar de outras formas:
+                        Na maioria das vezes, manifesta-se com um nódulo na mama, mas também pode se apresentar de outras formas:
                     </Text>
                 </View>
                 <View style={styles.imgContainer}>
@@ -86,7 +86,7 @@ export default ({navigation}) => {
                 (   
                     <View style={styles.textContainer}>
                         <Text style={styles.text}>
-                            Quando o câncer ainda não conseguiu penetrar nos tecidos, se manifesta externamente dessa maneira.
+                            Quando o câncer ainda não conseguiu penetrar nos tecidos, manifesta-se externamente dessa maneira;
                         </Text>
                         <TouchableOpacity style={styles.buttonRef} onPress={() => setShouldShow2(!shouldShow2)}>
                             <Text style={styles.textButton}>
@@ -115,7 +115,7 @@ export default ({navigation}) => {
                 (   
                     <View style={styles.textContainer}>
                         <Text style={styles.text}>
-                            Nesses casos o tumor deve estar no início e alojado nos dutos mamários.
+                            Nesses casos, o tumor deve estar no início e alojado nos dutos mamários;
                         </Text>
                         <TouchableOpacity style={styles.buttonRef} onPress={() => setShouldShow3(!shouldShow3)}>
                             <Text style={styles.textButton}>
@@ -144,7 +144,7 @@ export default ({navigation}) => {
                 (   
                     <View style={styles.textContainer}>
                         <Text style={styles.text}>
-                            Que está sempre presente e não diminui de tamanho, fixo e de consistência endurecida.
+                            Que está sempre presente e não diminui de tamanho, fixo e de consistência endurecida;
                         </Text>
                         <TouchableOpacity style={styles.buttonRef} onPress={() => setShouldShow4(!shouldShow4)}>
                             <Text style={styles.textButton}>
@@ -173,7 +173,7 @@ export default ({navigation}) => {
                 (   
                     <View style={styles.textContainer}>
                         <Text style={styles.text}>
-                            Isso demonstra que o câncer está avançando pelos gânglios linfáticos.
+                            Isso demonstra que o câncer está avançando pelos gânglios linfáticos;
                         </Text>
                         <TouchableOpacity style={styles.buttonRef} onPress={() => setShouldShow5(!shouldShow5)}>
                             <Text style={styles.textButton}>
@@ -202,7 +202,7 @@ export default ({navigation}) => {
                 (   
                     <View style={styles.textContainer}>
                         <Text style={styles.text}>
-                            Devido a degeneração das glândulas mamárias. Também são indicativos de um processo inflamatório nos vasos que irrigam a região.
+                            Devido à degeneração das glândulas mamárias. Também, são indicativos de um processo inflamatório nos vasos que irrigam a região.
                         </Text>
                         <TouchableOpacity style={styles.buttonRef} onPress={() => setShouldShow6(!shouldShow6)}>
                             <Text style={styles.textButton}>
@@ -230,7 +230,7 @@ export default ({navigation}) => {
                         </Text>
                     </View >
                     <Text style={styles.text}>
-                        O tipo histológico mais comum para o câncer de mama feminina é o carcinoma de células epiteliais, que se divide em lesões in situ e invasoras. Os carcinomas mais frequentes são os ductais ou lobulares.
+                        O tipo histológico mais comum para o câncer de mama feminina é o carcinoma de células epiteliais, que se divide em lesões in situ e invasoras. Os carcinomas mais frequentes são os ductais ou lobulares.
                     </Text>
                 </View>
                 <View style={styles.lastImgContainer}>

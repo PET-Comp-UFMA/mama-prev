@@ -156,7 +156,7 @@ export default ({route, navigation}) => {
         <Text style={styles.bigText}>DADOS DEMOGRÁFICOS</Text>
         <Text style={styles.text}>
           3 - Qual a idade da paciente? OBS: Esta ferramenta não calcula risco
-          de desenvolver câncer de mama em mulheres com menos de 35 anos, nem
+          de desenvolver câncer de mama em mulheres com menos de 35 anos nem
           com mais de 85.
         </Text>
 

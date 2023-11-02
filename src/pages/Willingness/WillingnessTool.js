@@ -24,7 +24,7 @@ export default ({navigation}) => {
                             </TouchableOpacity>
                         </View>
                         <Text style={{textAlign: 'center', marginVertical: 10, marginHorizontal:20, fontSize: 16}}>
-                            Escala de Adesão a Mamografia
+                            Escala de Adesão à Mamografia
                         </Text>
                         <TouchableOpacity style={styles.buttonClose2} onPress={() => {setVisible(false)}}>
                             <Text style={styles.textButtonM}>
@@ -49,16 +49,16 @@ export default ({navigation}) => {
             <ScrollView style={styles.container}>
                 <View>
                     <Text style={styles.text}>
-                        A escala <Text style={styles.textIta}>Revised Champion's Health Belief Model</Text> (RCHBMS), traduzida e adaptada culturalmente para o Brasil, auxilia na identificação de mulheres com alto risco de não adesão às diretrizes nacionais de mamografia no Brasil.
+                        A Escala <Text style={styles.textIta}>Revised Champion's Health Belief Model</Text> (RCHBMS), traduzida e adaptada culturalmente para o Brasil, auxilia na identificação de mulheres com alto risco de não adesão às diretrizes nacionais de mamografia no Brasil.
                     </Text>
                     <Text style={styles.text}>    
-                        Para cada uma das afirmativas que serão apresentadas a seguir, é necessário selecionar a resposta que melhor descreve a opinião da avaliada em relação ao seu comportamento frente ao rastreamento para o câncer de mama. 
+                        Para cada uma das afirmativas que serão apresentadas a seguir, é necessário selecionar a resposta que melhor descreve a opinião da avaliada em relação ao próprio comportamento frente ao rastreamento para o câncer de mama. 
                     </Text>
                     <Text style={styles.text}>
                         Não há respostas corretas ou incorretas para as afirmativas.
                     </Text>
                     <Text style={styles.text}>
-                        Para cada resposta é empregado um valor em escala Likert, variando de Discordo completamente a Concordo completamente.
+                        Para cada resposta, é empregado um valor em escala Likert, variando de Discordo completamente a Concordo completamente.
                     </Text>
                 </View>
                 <View style={styles.buttonsContainer}>

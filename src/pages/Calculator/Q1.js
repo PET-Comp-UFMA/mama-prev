@@ -52,9 +52,9 @@ export default ({navigation}) => {
             1 - A paciente tem alguma
             história médica de qualquer
             câncer de mama ou de
-            carcinoma ductal in situ
-            (CDIS) ou carcinoma lobular
-            in situ (CLIS) ou recebeu
+            Carcinoma Ductal In Situ
+            (CDIS) ou Carcinoma Lobular
+            In Situ (CLIS), ou recebeu
             anteriormente radioterapia
             na região do tórax para
             tratamento de linfoma de

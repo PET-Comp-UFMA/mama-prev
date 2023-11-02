@@ -18,13 +18,13 @@ export default ({navigation}) => {
             <ScrollView style={styles.container}>
                 <View style={styles.textContainer}>
                     <Text style={styles.text}>
-                        Diz respeito ao diagnóstico precoce e rastreamento, onde são identificadas, por meio de exames, as mulheres que têm risco de desenvolver o câncer de mama, e são tratadas em fase inicial, visando a diminuição da morbimortalidade da doença e a melhora da qualidade de vida das pacientes.
+                        Diz respeito ao diagnóstico precoce e rastreamento, em que são identificadas, por meio de exames, as mulheres que têm risco de desenvolver o câncer de mama, sendo, portanto, tratadas em fase inicial, visando diminuição da morbimortalidade da doença e melhora da qualidade de vida das pacientes.
                     </Text>
                 </View>
                 <View style={styles.buttonsContainer}>
-                    <NewButton textoPrincipal="Rastreamento para população geral" navigation = {() => navigation.navigate("TrackingGeneralPopulation")}/>
-                    <NewButton textoPrincipal="Rastreamento para população de alto risco" navigation = {() => navigation.navigate("TrackingHighRisk")}/>
-                    <NewButton textoPrincipal="Diagnóstico precoce" navigation = {() => navigation.navigate("Diagnostic")}/>
+                    <NewButton textoPrincipal="Rastreamento para população geral;" navigation = {() => navigation.navigate("TrackingGeneralPopulation")}/>
+                    <NewButton textoPrincipal="Rastreamento para população de alto risco;" navigation = {() => navigation.navigate("TrackingHighRisk")}/>
+                    <NewButton textoPrincipal="Diagnóstico precoce." navigation = {() => navigation.navigate("Diagnostic")}/>
                 </View>
             </ScrollView>
         </View>

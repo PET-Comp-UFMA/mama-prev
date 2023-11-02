@@ -16,7 +16,7 @@ export default ({navigation}) => {
             <ScrollView style={styles.container}>
                 <View>
                     <Text style={styles.text}>
-                        Estas duas ferramentas de avaliação irão auxiliar os profissionais tanto em suas auto avaliações, quanto para utilização com suas pacientes no momento da assistência.
+                        Estas duas ferramentas de avaliação irão auxiliar os profissionais nas auto avaliações e na utilização com pacientes no momento da assistência.
                     </Text>
                     <Text style={styles.text}>
                         Clique em uma das ferramentas para mais detalhes.
@@ -32,7 +32,7 @@ export default ({navigation}) => {
                 <View style={styles.buttonsContainer}>
                     <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('WillingnessTool')}>
                         <Text style={styles.textButton}>
-                            Escala de adesão a mamografia
+                            Escala de adesão à mamografia
                         </Text>
                     </TouchableOpacity>
                 </View>
